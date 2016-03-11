@@ -6,3 +6,5 @@ if( !isset($_SESSION['count']) ) {
 } else {
     $_SESSION['count'] ++ ;
 }
+
+array_splice(array &$input, int $offset, [, int $length [, array $replacement]]);
