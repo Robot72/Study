@@ -1,0 +1,2 @@
+grep -r "pattern" catalog/
+grep -rn "pattern" catalog/
