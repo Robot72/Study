@@ -8,3 +8,5 @@ if( !isset($_SESSION['count']) ) {
 }
 
 array_splice(array &$input, int $offset, [, int $length [, array $replacement]]);
+
+date('Y:m:d H:i:s');
