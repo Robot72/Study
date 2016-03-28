@@ -9,3 +9,6 @@ git mv file_name path_to_move
 git log --max-count=1
 git cat-file -t [hash] //Output info about commit-object
 git cat-file -p [hash] //Output info about commit-object
+git brach [branch_name] //Create branch
+git checkout [branch_name] //Switch to the branch
+git checkout -b [branch_name] //Create and switch to branch
