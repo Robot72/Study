@@ -1,1 +1,1 @@
-git
+git config --global alias.rh 'reset HEAD'
