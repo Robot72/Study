@@ -1,1 +1,6 @@
+//For config:
 git config --global alias.rh 'reset HEAD'
+git config --global alias.cc 'revert HEAD --no-edit' //Cancel commit
+
+//Just commans:
+git reset --hard [hash] // Reset commit 
