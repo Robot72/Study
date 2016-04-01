@@ -1,4 +1,8 @@
-ALTER TABLE name_table CHANGE columnt_old_name column_new_name INTEGER
+ALTER TABLE name_table CHANGE columnt_old_name column_new_name INTEGER;
+
+ALTER TABLE name_table
+ADD COLUMN `name_column` TEXT default '' 
+ADTER 'prev_column`;
 
 CREATE TABLE name_table (
     id INTEGER(11) AUTOINCRIMENT,
