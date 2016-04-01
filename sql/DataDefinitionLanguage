@@ -1,1 +1,7 @@
 ALTER TABLE name_table CHANGE columnt_old_name column_new_name INTEGER
+
+CREATE TABLE name_table (
+    id INTEGER(11) AUTOINCRIMENT,
+    name VARCHAR(255) NOT NULL,
+    PRIMARY KEY (id)
+);
