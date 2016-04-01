@@ -11,4 +11,6 @@ array_splice(array &$input, int $offset, [, int $length [, array $replacement]])
 
 date('Y:m:d H:i:s');
 
-header('Content-Type: text/html; charset=utf-8;')
+header('Content-Type: text/html; charset=utf-8;');
+serialize(obj);
+unserialize(str);
