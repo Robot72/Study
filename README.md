@@ -1,5 +1,9 @@
 # Study
 My Synopsis
 
-JS
-  WebIX
+- JS
+- PHP
+- SQL
+- Ubuntu
+- VCS
+- CSS
