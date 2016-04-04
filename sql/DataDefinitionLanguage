@@ -4,6 +4,8 @@ ALTER TABLE name_table
 ADD COLUMN `name_column` TEXT default '' 
 ADTER 'prev_column`;
 
+ALTER TABLE name_table DROP COLUMN column_name;
+
 CREATE TABLE name_table (
     id INTEGER(11) AUTOINCRIMENT,
     name VARCHAR(255) NOT NULL,
