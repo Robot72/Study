@@ -19,3 +19,8 @@ CREATE TABLE t1 (
 DESCRIBE t1;
 DESC t1;
 DROP TABLE t1 [RESTRICT | CASCADE]; 
+
+-- List of tables selected DB
+SELECT table_name, table_comment
+    FROM information_schema.tables
+    WHERE table_schema = 't';
