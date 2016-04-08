@@ -1,20 +1,21 @@
-ALTER TABLE name_table CHANGE columnt_old_name column_new_name INTEGER;
+ALTER TABLE t1 CHANGE columnt_old_name column_new_name INTEGER;
 
-ALTER TABLE name_table
-ADD COLUMN `name_column` TEXT default '' 
+ALTER TABLE t1
+ADD COLUMN `c1` TEXT default '' 
 ADTER 'prev_column`;
 
-ALTER TABLE name_table DROP COLUMN column_name;
+ALTER TABLE t1 DROP COLUMN column_name;
 
-CREATE TABLE name_table (
+CREATE TABLE t1 (
     id INTEGER(11) AUTO_INCREMENT,
     name VARCHAR(255) NOT NULL,
     PRIMARY KEY (id)
 );
 
 //Examples from Specialist-movie:
-CREATE TABLE name_table (
-    column1 CHAR(20) CHARACTER SET utf 8 COLLATE utf8_bin
+CREATE TABLE t1 (
+    c1 CHAR(20) CHARACTER SET utf 8 COLLATE utf8_bin
 );
-DESCRIBE name_table;
-DESC name_table;
+DESCRIBE t1;
+DESC t1;
+DROP TABLE t1 [RESTRICT | CASCADE]; 
