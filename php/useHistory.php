@@ -16,3 +16,4 @@ serialize($obj);
 unserialize($str);
 
 strtolower($str);
+intval($value);
