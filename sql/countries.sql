@@ -9,4 +9,4 @@ SELECT *
     FROM `country_settings`
     INNER JOIN `country` 
     ON `country_settings`.id_country = `country`.id
-    ORDER BY `country_settings`.id_country ASK;
+    ORDER BY `country_settings`.id_country;
