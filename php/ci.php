@@ -17,3 +17,9 @@ $config['per_page'] = 20;
 $this->pagination->initialize($config);
 
 echo $this->pagination->create_links();
+
+//DB quick start:
+$sql = $this->db->query('SELECT * FROM TABLE');
+if($sql->num_rows() > 0) {
+    $sql->result(); // return array of the stdClassES
+} 
