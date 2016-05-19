@@ -1,1 +1,5 @@
 Understanding File Permissions - общие сведения о разрешениях файлов
+10.2. Reading and writing entire files
+10.2.1 Reading a file.
+10.3 Reading and Writing Parts of Files
+entire file at once - весь файл сразу
