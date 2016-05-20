@@ -16,3 +16,9 @@ SELECT `id_country`, `value`, `code`
 FROM `country_settings` INNER JOIN `country` 
 ON `country_settings`.id_country = `country`.id
 WHERE `key`='phone_code' AND `public`=1;
+
+-- Модернизация запроса для получения инфы и по путям изображений к флагам
+SELECT `id_country`, `key`, `value`, `code`
+FROM `country_settings` INNER JOIN `country` 
+ON `country_settings`.id_country = `country`.id
+WHERE (`key`='phone_code' AND `public`=1) OR (`key`='flag_icon' AND `public`=1);
