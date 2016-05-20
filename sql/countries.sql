@@ -21,4 +21,5 @@ WHERE `key`='phone_code' AND `public`=1;
 SELECT `id_country`, `key`, `value`, `code`
 FROM `country_settings` INNER JOIN `country` 
 ON `country_settings`.id_country = `country`.id
-WHERE (`key`='phone_code' AND `public`=1) OR (`key`='flag_icon' AND `public`=1);
+WHERE (`key`='phone_code' AND `public`=1) OR (`key`='flag_icon' AND `public`=1)
+ORDER BY `country_settings`.id_country;
