@@ -17,3 +17,6 @@ unserialize($str);
 
 strtolower($str);
 intval($value);
+
+file_get_content($file);
+file_put_content($file);
