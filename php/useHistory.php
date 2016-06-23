@@ -8,6 +8,7 @@ if( !isset($_SESSION['count']) ) {
 }
 
 array_splice(array &$input, int $offset, [, int $length [, array $replacement]]);
+$reverseArr = array_reverse($array);
 
 date('Y:m:d H:i:s');
 
