@@ -10,7 +10,7 @@ Project structure
         |_controllers
         | |_pg_name.php - the name of the controller
         |_helpers
-          |_name_helper.php - the name of the helper. It is JS-file. The file starts with '<script src="good.js"></script>'
+          |_name_helper.php - the name of the helper. It is JS-file. The file starts with this codes: <script src="good.js"></script>
       
 
 </pre>
