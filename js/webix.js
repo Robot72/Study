@@ -19,6 +19,7 @@ ui({
                     css: {}// or string
                 }    
             ],
+            editor:"text", // 
             sort: 'string',
             template: function (obj) {
                 report obj.id;
@@ -26,3 +27,5 @@ ui({
         }    
     ]
 });
+//Data Editors
+//editos: 'checkbox', 'inline-checkbox', 'color', 'multiselect' and other.
