@@ -1,0 +1,1 @@
+php bin/console config:dump-reference framework     - for get a big example dump of all of the valid keys.
