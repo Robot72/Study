@@ -25,7 +25,8 @@ ui({
                 report obj.id;
             }
         }    
-    ]
+    ],
+    editable: true //Для включения редактирования данных в ячейках таблицы
 });
 //Data Editors
 //editos: 'checkbox', 'inline-checkbox', 'color', 'multiselect' and other.
