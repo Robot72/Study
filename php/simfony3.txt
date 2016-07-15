@@ -1,2 +1,3 @@
 php bin/console config:dump-reference framework               - for get a big example dump of all of the valid keys.
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;   - use within C for defined mapping a url to a C. Use within comment
+php bin/console debug:container                               - output everyone aliases container and names containers.
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;   - use within C for defined mapping a url to a C. Use within comment.
