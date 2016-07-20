@@ -26,6 +26,11 @@ ui({
             }
         }    
     ],
+    scheme: {
+        $change: function (item) {
+            item.$css = 'new_style_class';//Update scheme of the table dependency my own rules.
+        }  
+    },
     editable: true //Для включения редактирования данных в ячейках таблицы
 });
 //Data Editors
