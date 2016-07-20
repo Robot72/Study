@@ -15,7 +15,7 @@ Project structure
 
 </pre>
 
-Feature of the model-class. It allows add json response for methods. The methods will be execute function of the action controller's. To do http-request may at the url-address: /ajax/module/method
+Feature of the model-class. It allows add json response for methods. The methods will be execute function of the action controller's. To do http-request may at the url-address: '/ajax/module/method'. For the feature need implement follow a method:
 <pre>
 public function index($mname)
 {
