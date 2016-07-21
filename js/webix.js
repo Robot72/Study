@@ -39,4 +39,7 @@ ui({
 /**
  * Execute sorting to the column from it name
  */ 
-webixTbl.sort('#column_name#', 'asc', 'string')
+webixTbl.sort('#column_name#', 'asc', 'string');
+webixTbl.attachEvent('onEventName', function (arg1, arg2) {
+    //Callback function. Found signature on doc-site.
+})
