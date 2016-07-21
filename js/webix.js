@@ -35,3 +35,8 @@ ui({
 });
 //Data Editors
 //editos: 'checkbox', 'inline-checkbox', 'color', 'multiselect' and other.
+
+/**
+ * Execute sorting to the column from it name
+ */ 
+webixTbl.sort('#column_name#', 'asc', 'string')
