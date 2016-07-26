@@ -1,3 +1,5 @@
 php bin/console config:dump-reference framework               - for get a big example dump of all of the valid keys.
 php bin/console debug:container                               - output everyone aliases container and names containers.
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;   - use within C for defined mapping a url to a C. Use within comment.
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;   - use within C for defined mapping a url to a C. Use within commen.
+php bin/console assetic:dump                                  - need to dump generationg assets manually.
+php bin/console assetic:watch                                 - assets will be regenerated automatically as they change.
