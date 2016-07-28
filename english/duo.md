@@ -20,3 +20,10 @@ Lesson 4
 - over
 - except for
 - against
+
+###Adverbs
+You are just on time      - Ты как раз вовремя
+It's pretty interesting   - Это довольно интересно
+I am completly agains it  - Я совершенно против этого 
+We live in the same district        - Мы живем в том же районе
+It is a pretty expensive dress.     - Это довольно дорогое платье
