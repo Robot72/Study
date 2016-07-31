@@ -22,8 +22,11 @@ Lesson 4
 - against
 
 ###Adverbs
-You are just on time      - Ты как раз вовремя
-It's pretty interesting   - Это довольно интересно
-I am completly agains it  - Я совершенно против этого 
-We live in the same district        - Мы живем в том же районе
-It is a pretty expensive dress.     - Это довольно дорогое платье
+- You are just on time      - Ты как раз вовремя
+- It's pretty interesting   - Это довольно интересно
+- I am completly agains it  - Я совершенно против этого 
+- We live in the same district        - Мы живем в том же районе
+- It is a pretty expensive dress.     - Это довольно дорогое платье
+- Generally it is green               - Как правило это зеленое
+- You look very tired       - Ты выглядишь очень уставшим
+- The food is especially popular during summer  - Эта еда особенно популярна во время лета
