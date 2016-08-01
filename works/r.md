@@ -22,3 +22,30 @@ public function index($mname)
     $this->mname = $mname;
 }
 </pre>
+
+Additional methods that I added within a controller for work with json-response.
+<pre>
+        //Methods for work with ajax
+        public function responseJson( $data )
+        {   
+            echo json_encode( $this->prepare_data( $data ) ); 
+            die();
+        }
+        
+        public function prepare_data( $param )
+        {   
+            header('Content-type: text/html ; charset=utf-8');
+            $result=false;
+            if(is_array( $param ))
+            {
+                foreach ($param as $key=>$row)
+                {
+                    $result[$key]=$this->prepare_data($row);
+                }
+            } else {
+                //$result=iconv('windows-1251', 'utf-8', $param);
+                $result=$param;
+            }
+            return ($result);
+        }
+</pre>
