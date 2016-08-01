@@ -7,8 +7,10 @@ if( !isset($_SESSION['count']) ) {
     $_SESSION['count'] ++ ;
 }
 
+/* ARRAYs */
 array_splice(array &$input, int $offset, [, int $length [, array $replacement]]);
 $reverseArr = array_reverse($array);
+array_fill_keys(['key1', 'key2'], 'value'); //: array
 
 date('Y:m:d H:i:s');
 
