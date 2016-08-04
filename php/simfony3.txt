@@ -9,3 +9,6 @@ php bin/console translation:update --force fr                 - don't understand
 
 use Symfony\Components\Routing\Generator\UrlGeneratorInterface;
 $link = $this->generateUrl('sandbox_my_index', array(), UrlGeneratorInterface::ABSOLUTE_URL);     - get absolute url addresses.
+
+Finder components
+http://symfony.com/doc/current/components/finder.html
