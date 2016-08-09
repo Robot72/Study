@@ -2,18 +2,17 @@
 My Synopsis
 
 ### Кодинг
-- JS
-- PHP
-- SQL
+- JS *(LearnJS)*
+- PHP 
+- DB *(профессионал)*
 - CSS
 
 ### Инструменты
-- Ubuntu
-- VCS
+- Сonsole fo the linum *(Ubuntu book)*
+- VCS *(githowto)*
 
 ### Языки
-- Английский
-- - Duo
+- Английский *(DuoLingo, ТВП Полиглот, Design Destiny, Symfony book 3)*
 - - 
 
 ### Фундамент(и):
