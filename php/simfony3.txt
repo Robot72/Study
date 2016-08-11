@@ -7,6 +7,7 @@ php bin/console assets:install web --symlink                  - create a symlink
 php bin/console debug:translation ru --all                    - output all keys and values within translate-files.
 php bin/console translation:update --dump-messages ru         - don't understand
 php bin/console translation:update --force fr                 - don't understand
+php bin/console cache:clear --env=dev --no-debug              - clear of the cache
 
 use Symfony\Components\Routing\Generator\UrlGeneratorInterface;
 $link = $this->generateUrl('sandbox_my_index', array(), UrlGeneratorInterface::ABSOLUTE_URL);     - get absolute url addresses.
