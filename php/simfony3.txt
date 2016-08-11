@@ -3,6 +3,7 @@ php bin/console debug:container                               - output everyone 
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;   - use within C for defined mapping a url to a C. Use within commen.
 php bin/console assetic:dump                                  - need to dump generationg assets manually.
 php bin/console assetic:watch                                 - assets will be regenerated automatically as they change.
+php bin/console assets:install web --symlink                  - create a symlink to each bundle instead of copying its assets.
 php bin/console debug:translation ru --all                    - output all keys and values within translate-files.
 php bin/console translation:update --dump-messages ru         - don't understand
 php bin/console translation:update --force fr                 - don't understand
