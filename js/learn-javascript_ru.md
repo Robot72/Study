@@ -123,7 +123,7 @@ http://learn.javascript.ru/event-bubbling
 Для поиска одного совпадения
 - Найти позицию первого совпадения – str.search(reg).
 - Найти само совпадение – str.match(reg).
-- Проверить, есть ли хоть одно совпадение – regexp.test(str) или str.search(reg) != -1.
+- Проверить, есть ли хоть одно совпадение – regexp.test(str) или str.search(reg) != -1. `/MY/i.test('hello my friend, hello my enemies!');` `"hello".search(/h/gi); `
 - Найти совпадение с нужной позиции – regexp.exec(str), начальную позицию поиска задать в regexp.lastIndex.
 Для поиска всех совпадений:
 - Найти массив совпадений – str.match(reg), с флагом g.
