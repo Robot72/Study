@@ -1,4 +1,5 @@
 <?php
+// Code Igniter version 3
 //Models
 //  Connecting to your DB
 //  Connectivity settings, as defined in your database config file will be used
@@ -22,4 +23,8 @@ echo $this->pagination->create_links();
 $sql = $this->db->query('SELECT * FROM TABLE');
 if($sql->num_rows() > 0) {
     $sql->result(); // return array of the stdClassES
+    $sql->result_array();
+    $sql->result_object();
 } 
+//Ust Query builder
+$sql = $this->db->get_where('TBL_NAME', ['id' => 3, 'name' => 'alex']);
