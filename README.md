@@ -8,7 +8,7 @@
     - "Приемы объектно-ориентированного проектирования" + исследование примеров аналогов на php
   - FW
     - Symfony book 3
-    - Authorization & Authintification
+    - Authorization & Authintification *(Аутентификация, авторизация и RBAC в Yii2)*
 - DB 
   - профессионал
 - CSS
