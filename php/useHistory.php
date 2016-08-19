@@ -21,6 +21,9 @@ serialize($obj);
 unserialize($str);
 strtolower($str);
 intval($value);
+$str = <<<EOT
+   many string
+EOT;
 
 /* FILES */
 file_get_content($file);
