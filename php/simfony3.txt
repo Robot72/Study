@@ -14,3 +14,6 @@ $link = $this->generateUrl('sandbox_my_index', array(), UrlGeneratorInterface::A
 
 Finder components
 http://symfony.com/doc/current/components/finder.html
+
+//SERVICES
+$this->get('kernel')->getRootDir();
