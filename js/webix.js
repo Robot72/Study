@@ -21,6 +21,8 @@ ui({
             ],
             editor:"text", // 
             sort: 'string',
+            adjust: 'data' //Устанавливает ширину колонки ширине максимального значения в данных
+            fillspase: 5, //Пропорция ширины колонки относительно других
             template: function (obj) {
                 report obj.id;
             }
