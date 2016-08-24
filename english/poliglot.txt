@@ -11,3 +11,49 @@ She isn't learning English.
 She is styding German language.
 She bought a car for him.
 Them didn't bought the car for our.
+Good morning Vladimir!
+Good evening!
+Good afternoon:)
+You know what I mean.
+Nice to meet you.
+I am sorry.
+I apologize for later come.
+I regret.
+I studied art history.
+I like to study economic theory.
+Do you like to read a book about economic?
+Does she like to read the book?
+Will she like to read the book?
+Did she come to my work room?
+She didn't come to my work room.
+I do my work.
+He does his work.
+She will work her job.
+Will she work today?
+Will she come to her work today?
+She will come her work today.
+I come to my home.
+Do we come to our homes?
+I know her.
+She knows me.
+I will know everything about the language.
+Will he know everything about the programming language?
+He did know anything about PHP.
+They did know anithing about PHP.
+I will go to Svetlana.
+Will I go to Svetlana?
+We do not go to the department.
+Do they go to the department?
+Did they go to the department?
+We did not go to the department.
+Will we be at work?
+We will be at work.
+Is she at work?
+She is at work.
+Were they at work yesterday?
+We were at work yesterday.
+Today I am learning.
+Am I learning today?
+Are they learning today?
+They are learning today.
+They are not learning today.
