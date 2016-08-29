@@ -29,3 +29,15 @@ EOT;
 file_get_content($file);
 file_put_content($file);
 substr(sprintf('%o', fileperms('filename')), -3); //Get permissions code for access to perpose file
+
+/** SPL **/
+$array = [['d', 'f' => 'd'], 'e'];
+$arrIter = new \RecursiveArrayIterator($array);
+$iterator = new \RecursiveIteratorIterator($arrIter, \RecursiveIteratorIterator::SELF_FIRST);
+$iterator->rewind();
+while ( $iterator->valid() ) {
+    $currentDepth = $iterator->getDepth();
+    $currentKey = $iterator->key();
+    echo $currentKey;
+    $iterator->next();
+}
