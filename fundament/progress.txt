@@ -5,7 +5,7 @@ St I.                   | +
 St m                    | 
 Symfony book 3          | +++++++
 PHP на хабре            | +
-Codeacademy             | 
+Codeacademy             | +
 Duo                     | +++++++++
 ТБЧ ИАЧ                 | ++++++
 ТБЧ ДАЧ                 | ++
