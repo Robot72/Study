@@ -3,3 +3,5 @@ ability         - возможность, способность
 as opposed to subclassing - в отличие от подклассов
 can be achieved - может быть достигнут
 will need to be able - нужно будет иметь возможность
+now knows how to persists - теперь знает, как сохраняется
+is incredibly powerful - невероятно мощный
