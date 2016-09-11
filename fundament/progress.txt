@@ -7,6 +7,7 @@ Symfony book 3          | ++++++++
 PHP на хабре            | +
 Codeacademy             | ++
 Duo                     | ++++++++++|
+New hotline             | +
 ТБЧ ИАЧ                 | ++++++
 ТБЧ ДАЧ                 | ++
 ТБЧ соз-е т-и           | ++++
