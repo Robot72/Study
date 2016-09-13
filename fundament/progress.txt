@@ -7,7 +7,7 @@ Symfony book 3          | ++++++++
 PHP на хабре            | +
 Приемы ООП + PHP        | +
 Learn JS                | ++++
-Codeacademy             | ++
+Codeacademy             | +++
 ТВП "Полиглот"          | +++
 Duo                     | ++++++++++|
 New hotline             | +
