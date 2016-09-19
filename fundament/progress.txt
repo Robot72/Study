@@ -6,7 +6,7 @@ St m                    | +
 Symfony book 3          | ++++++++
 PHP на хабре            | +
 Приемы ООП + PHP        | +
-Learn JS                | +++++
+Learn JS                | ++++++
 Codeacademy             | +++
 ТВП "Полиглот"          | +++
 Duo                     | ++++++++++|
