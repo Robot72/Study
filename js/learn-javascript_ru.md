@@ -34,6 +34,24 @@ NaN (Not a number)
 - Дробные числа дают ошибку вычислений. При необходимости ее можно отсечь округлением до нужного знака.
 - Случайные числа от 0 до 1 генерируются с помощью Math.random(), остальные – преобразованием из них.
 
+Строки
+------
+http://learn.javascript.ru/string
+
+    var str = "Good day! Gooood-good how are you? are";
+    var target = "are";
+    var pos = -1;
+    while( (pos = str.indexOf(target, pos + 1)) != -1 ) {
+        alert(pos);
+    }
+    
+    String.fromCharCode(1024)   //Получает символ по его коду
+    str.charCodeAt(pos);      //получает код символа
+    
+    //Сравнение строк! Самый надедный способ:
+    var str = "Вася"; 
+    var str.localeCompore(str2); // return -1 or 0 or 1 . Подробно эта тема освещена http://learn.javascript.ru/intl
+    
 
 ОПЕРАТОРЫ
 ---------
