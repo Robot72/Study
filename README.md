@@ -2,7 +2,7 @@
 
 ### Кодинг
 - JS 
-  - LearnJS *(RegExp)*
+  - LearnJS *(Structure data, RegExp)*
 - PHP 
   - Native
     - "Приемы объектно-ориентированного проектирования" + исследование примеров аналогов на php
@@ -10,7 +10,7 @@
     - Symfony book 3
     - Authorization & Authintification *(Аутентификация, авторизация и RBAC в Yii2)*
 - DB 
-  - профессионал
+  - специалист
 - CSS
 
 ### Инструменты
@@ -21,12 +21,13 @@
 
 ### Языки
 - Английский 
-  - DuoLingo
+  - Special programm for me
+    - "English Grammar" Kachalova 
+    - 
+  - Symfony book 3
   - ТВП Полиглот
   - Design Destiny
-  - Symfony book 3
-
-
+  
 ### Фундамент(и):
 - Экономическая теория
   - "Экономикс"
