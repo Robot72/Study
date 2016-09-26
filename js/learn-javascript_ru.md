@@ -53,6 +53,14 @@ http://learn.javascript.ru/string
     var str.localeCompore(str2); // return -1 or 0 or 1 . Подробно эта тема освещена http://learn.javascript.ru/intl
     
 
+Meтоды массивов
+---------------
+http://learn.javascript.ru/array-methods
+
+- [1, 2, 3, 4, 5, 6, 7].splice(1, 1); // return [1, 3, 4, 5, 6, 7]
+- [1, 2].slice(1); // return [1]
+- [1, 2, 3, 12].sort(); // return [1, 12, 2, 3]
+
 ОПЕРАТОРЫ
 ---------
 Побитовые операторы
