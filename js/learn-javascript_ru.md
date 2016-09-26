@@ -1,12 +1,12 @@
 #ОСНОВЫ JS
 ---------
-СТРУКТУРЫ ДАННЫХ
+STRUCTURE OF THE DATA
 ----------------
-Введение в методы и свойства
+Introduce for properties and methods
 ----------------------------
 Все значения в JavaScript, за исключением null и undefined, содержат набор вспомогательных функций и значений, доступных «через точку».
 
-Числа
+Numbers
 -----
 Все числа в JavaScript, как целые так и дробные, имеют тип Number и хранятся в 64-битном формате IEEE-754, также известном как «double precision».
 
@@ -34,7 +34,7 @@ NaN (Not a number)
 - Дробные числа дают ошибку вычислений. При необходимости ее можно отсечь округлением до нужного знака.
 - Случайные числа от 0 до 1 генерируются с помощью Math.random(), остальные – преобразованием из них.
 
-Строки
+String
 ------
 http://learn.javascript.ru/string
 
@@ -53,13 +53,23 @@ http://learn.javascript.ru/string
     var str.localeCompore(str2); // return -1 or 0 or 1 . Подробно эта тема освещена http://learn.javascript.ru/intl
     
 
-Meтоды массивов
----------------
+Methods of the array
+--------------------
 http://learn.javascript.ru/array-methods
 
 - [1, 2, 3, 4, 5, 6, 7].splice(1, 1); // return [1, 3, 4, 5, 6, 7]
 - [1, 2].slice(1); // return [1]
 - [1, 2, 3, 12].sort(); // return [1, 12, 2, 3]
+
+Arrays(iteration methods)
+-------------------------
+
+- arr.forEach( function(item, i, arr) {  } );
+- arr.filter( function(item, i, arr) { return item > 0 ? true : false } );
+- arr.map( function(item, i, arr) { return item.length } );
+- arr.some( function(item) { return item>0 ? true : false } );     arr.every( function(item) {return item>0 ? true : false } );
+- arr.reduce( function(previousValue, currentItem, i, arr) { return previousValue + currentItem; };    and to be method reduceRight
+
 
 ОПЕРАТОРЫ
 ---------
