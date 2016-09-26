@@ -1,13 +1,13 @@
 #ОСНОВЫ JS
----------
-STRUCTURE OF THE DATA
-----------------
-Introduce for properties and methods
-----------------------------
+
+##STRUCTURE OF THE DATA
+
+###Introduce for properties and methods
+
 Все значения в JavaScript, за исключением null и undefined, содержат набор вспомогательных функций и значений, доступных «через точку».
 
-Numbers
------
+###Numbers
+
 Все числа в JavaScript, как целые так и дробные, имеют тип Number и хранятся в 64-битном формате IEEE-754, также известном как «double precision».
 
 Способы записи:
@@ -34,8 +34,8 @@ NaN (Not a number)
 - Дробные числа дают ошибку вычислений. При необходимости ее можно отсечь округлением до нужного знака.
 - Случайные числа от 0 до 1 генерируются с помощью Math.random(), остальные – преобразованием из них.
 
-String
-------
+###String
+
 http://learn.javascript.ru/string
 
     var str = "Good day! Gooood-good how are you? are";
@@ -53,16 +53,15 @@ http://learn.javascript.ru/string
     var str.localeCompore(str2); // return -1 or 0 or 1 . Подробно эта тема освещена http://learn.javascript.ru/intl
     
 
-Methods of the array
---------------------
+###Methods of the array
+
 http://learn.javascript.ru/array-methods
 
 - [1, 2, 3, 4, 5, 6, 7].splice(1, 1); // return [1, 3, 4, 5, 6, 7]
 - [1, 2].slice(1); // return [1]
 - [1, 2, 3, 12].sort(); // return [1, 12, 2, 3]
 
-Arrays(iteration methods)
--------------------------
+###Arrays(iteration methods)
 
 - arr.forEach( function(item, i, arr) {  } );
 - arr.filter( function(item, i, arr) { return item > 0 ? true : false } );
@@ -71,10 +70,10 @@ Arrays(iteration methods)
 - arr.reduce( function(previousValue, currentItem, i, arr) { return previousValue + currentItem; };    and to be method reduceRight
 
 
-ОПЕРАТОРЫ
----------
-Побитовые операторы
--------------------
+##Operators
+
+###Побитовые операторы
+
     AND(и) ( & )
     OR(или) ( | )
     XOR(побитовое исключающее или) ( ^ )
