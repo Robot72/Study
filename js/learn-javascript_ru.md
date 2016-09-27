@@ -69,6 +69,12 @@ http://learn.javascript.ru/array-methods
 - arr.some( function(item) { return item>0 ? true : false } );     arr.every( function(item) {return item>0 ? true : false } );
 - arr.reduce( function(previousValue, currentItem, i, arr) { return previousValue + currentItem; };    and to be method reduceRight
 
+###Psevdoarray of array
+
+- arguments has prop ".length" and Psevdoarray isn't array or object
+- deprecated props: arguments.callee, arguments.caller, arguments.callee.caller
+- if may be null or 0 use operator ||
+- func(options) {}       options = {prop1: 'd', prop2: '2'}
 
 ##Operators
 
