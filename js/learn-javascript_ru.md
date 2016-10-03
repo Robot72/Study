@@ -1,104 +1,14 @@
-#Language JS
-
-##STRUCTURE OF THE DATA
-
-###Introduce for properties and methods
-
-Все значения в JavaScript, за исключением null и undefined, содержат набор вспомогательных функций и значений, доступных «через точку».
-
-###Numbers
-
-Все числа в JavaScript, как целые так и дробные, имеют тип Number и хранятся в 64-битном формате IEEE-754, также известном как «double precision».
-
-Способы записи:
-    
-    0xFF
-    2e10
-    2e-5
-    
-Деление на ноль и Infinity
-
-NaN (Not a number) 
-    
-    Возвращается, когда не может быть совершена математическая операция.
-    Значение NaN – единственное, в своем роде, которое не равно ничему, включая себя.
-    Значение NaN можно проверить специальной функцией isNaN(n),
-    Значение NaN «прилипчиво». Любая операция с NaN возвращает NaN.
-
-- Числа могут быть записаны в шестнадцатиричной, восьмеричной системе, а также «научным» способом.
-- В JavaScript существует числовое значение бесконечность Infinity.
-- Ошибка вычислений дает NaN.
-- Арифметические и математические функции преобразуют строку в точности в число, игнорируя начальные и конечные пробелы.
-- Функции parseInt/parseFloat делают числа из строк, которые начинаются с числа.
-- Есть четыре способа округления: Math.floor, Math.round, Math.ceil и битовый оператор. Для округления до нужного знака используйте +n.toFixed(p) или трюк с умножением и делением на 10p.
-- Дробные числа дают ошибку вычислений. При необходимости ее можно отсечь округлением до нужного знака.
-- Случайные числа от 0 до 1 генерируются с помощью Math.random(), остальные – преобразованием из них.
-
-###String
-
-http://learn.javascript.ru/string
-
-    var str = "Good day! Gooood-good how are you? are";
-    var target = "are";
-    var pos = -1;
-    while( (pos = str.indexOf(target, pos + 1)) != -1 ) {
-        alert(pos);
-    }
-    
-    String.fromCharCode(1024)   //Получает символ по его коду
-    str.charCodeAt(pos);      //получает код символа
-    
-    //Сравнение строк! Самый надедный способ:
-    var str = "Вася"; 
-    var str.localeCompore(str2); // return -1 or 0 or 1 . Подробно эта тема освещена http://learn.javascript.ru/intl
-    
-
-###Methods of the array
-
-http://learn.javascript.ru/array-methods
-
-- [1, 2, 3, 4, 5, 6, 7].splice(1, 1); // return [1, 3, 4, 5, 6, 7]
-- [1, 2].slice(1); // return [1]
-- [1, 2, 3, 12].sort(); // return [1, 12, 2, 3]
-
-###Arrays(iteration methods)
-
-- arr.forEach( function(item, i, arr) {  } );
-- arr.filter( function(item, i, arr) { return item > 0 ? true : false } );
-- arr.map( function(item, i, arr) { return item.length } );
-- arr.some( function(item) { return item>0 ? true : false } );     arr.every( function(item) {return item>0 ? true : false } );
-- arr.reduce( function(previousValue, currentItem, i, arr) { return previousValue + currentItem; };    and to be method reduceRight
-
-###Psevdoarray of array
-
-- arguments has prop ".length" and Psevdoarray isn't array or object
-- deprecated props: arguments.callee, arguments.caller, arguments.callee.caller
-- if may be null or 0 use operator ||
-- func(options) {}       options = {prop1: 'd', prop2: '2'}
-
-##Operators
-
-###Побитовые операторы
-
-    AND(и) ( & )
-    OR(или) ( | )
-    XOR(побитовое исключающее или) ( ^ )
-    NOT(не) ( ~ )
-    LEFT SHIFT(левый сдвиг) ( << )
-    RIGHT SHIFT(правый сдвиг) ( >> )
-    ZERO-FILL RIGHT SHIFT(правый сдвиг с заполнением нулями) ( >>> )
-    
-Функции для работы с побитовыми операторами
-var access = parseInt('110000', 2); //Получение числа из строки
-var access = access.toString(2) //Обратно двоичную строку из числа
-
 #Document, Events, Interfaces
 ##Документ и объекты страницы
 ###Окружение: DOM, BOM и JS
 BOM - объектная модель браузера.
 ###Дерево DOM
+http://learn.javascript.ru/dom-nodes
 - DOM - это представление документа в виде дерева объектов, доступное для изменения в JS.
-
+###Работа с DOM из консоли
+http://learn.javascript.ru/dom-console
+- Переместится из консоли в элементы
+- Выбрать в консоли последние элементы js-ом ($0)
 
 ##ОСНОВЫ РАБОТЫ С СОБЫТИЯМИ
 -------------------------
@@ -243,3 +153,97 @@ http://learn.javascript.ru/event-bubbling
 Если в регулярном выражении несколько символов или символьных классов заключены в квадратные скобки […], то это означает "искать любой символ из указанных в […]".
 - конструкция [^ ] означает инверсию или "кроме"
 - может использоваться как диапазон, а не набор символов: [a-z]
+
+#Language JS
+
+##STRUCTURE OF THE DATA
+
+###Introduce for properties and methods
+
+Все значения в JavaScript, за исключением null и undefined, содержат набор вспомогательных функций и значений, доступных «через точку».
+
+###Numbers
+
+Все числа в JavaScript, как целые так и дробные, имеют тип Number и хранятся в 64-битном формате IEEE-754, также известном как «double precision».
+
+Способы записи:
+    
+    0xFF
+    2e10
+    2e-5
+    
+Деление на ноль и Infinity
+
+NaN (Not a number) 
+    
+    Возвращается, когда не может быть совершена математическая операция.
+    Значение NaN – единственное, в своем роде, которое не равно ничему, включая себя.
+    Значение NaN можно проверить специальной функцией isNaN(n),
+    Значение NaN «прилипчиво». Любая операция с NaN возвращает NaN.
+
+- Числа могут быть записаны в шестнадцатиричной, восьмеричной системе, а также «научным» способом.
+- В JavaScript существует числовое значение бесконечность Infinity.
+- Ошибка вычислений дает NaN.
+- Арифметические и математические функции преобразуют строку в точности в число, игнорируя начальные и конечные пробелы.
+- Функции parseInt/parseFloat делают числа из строк, которые начинаются с числа.
+- Есть четыре способа округления: Math.floor, Math.round, Math.ceil и битовый оператор. Для округления до нужного знака используйте +n.toFixed(p) или трюк с умножением и делением на 10p.
+- Дробные числа дают ошибку вычислений. При необходимости ее можно отсечь округлением до нужного знака.
+- Случайные числа от 0 до 1 генерируются с помощью Math.random(), остальные – преобразованием из них.
+
+###String
+
+http://learn.javascript.ru/string
+
+    var str = "Good day! Gooood-good how are you? are";
+    var target = "are";
+    var pos = -1;
+    while( (pos = str.indexOf(target, pos + 1)) != -1 ) {
+        alert(pos);
+    }
+    
+    String.fromCharCode(1024)   //Получает символ по его коду
+    str.charCodeAt(pos);      //получает код символа
+    
+    //Сравнение строк! Самый надедный способ:
+    var str = "Вася"; 
+    var str.localeCompore(str2); // return -1 or 0 or 1 . Подробно эта тема освещена http://learn.javascript.ru/intl
+    
+
+###Methods of the array
+
+http://learn.javascript.ru/array-methods
+
+- [1, 2, 3, 4, 5, 6, 7].splice(1, 1); // return [1, 3, 4, 5, 6, 7]
+- [1, 2].slice(1); // return [1]
+- [1, 2, 3, 12].sort(); // return [1, 12, 2, 3]
+
+###Arrays(iteration methods)
+
+- arr.forEach( function(item, i, arr) {  } );
+- arr.filter( function(item, i, arr) { return item > 0 ? true : false } );
+- arr.map( function(item, i, arr) { return item.length } );
+- arr.some( function(item) { return item>0 ? true : false } );     arr.every( function(item) {return item>0 ? true : false } );
+- arr.reduce( function(previousValue, currentItem, i, arr) { return previousValue + currentItem; };    and to be method reduceRight
+
+###Psevdoarray of array
+
+- arguments has prop ".length" and Psevdoarray isn't array or object
+- deprecated props: arguments.callee, arguments.caller, arguments.callee.caller
+- if may be null or 0 use operator ||
+- func(options) {}       options = {prop1: 'd', prop2: '2'}
+
+##Operators
+
+###Побитовые операторы
+
+    AND(и) ( & )
+    OR(или) ( | )
+    XOR(побитовое исключающее или) ( ^ )
+    NOT(не) ( ~ )
+    LEFT SHIFT(левый сдвиг) ( << )
+    RIGHT SHIFT(правый сдвиг) ( >> )
+    ZERO-FILL RIGHT SHIFT(правый сдвиг с заполнением нулями) ( >>> )
+    
+Функции для работы с побитовыми операторами
+var access = parseInt('110000', 2); //Получение числа из строки
+var access = access.toString(2) //Обратно двоичную строку из числа
