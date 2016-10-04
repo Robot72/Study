@@ -12,6 +12,10 @@ http://learn.javascript.ru/dom-console
 - Переместится из консоли в элементы
 - Выбрать в консоли последние элементы js-ом ($0)
 
+###Навигация по DOM-элементам
+
+http://learn.javascript.ru/traversing-dom
+
 ##ОСНОВЫ РАБОТЫ С СОБЫТИЯМИ
 -------------------------
 INTRO BROWSER EVENT
