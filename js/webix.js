@@ -45,3 +45,20 @@ webixTbl.sort('#column_name#', 'asc', 'string');
 webixTbl.attachEvent('onEventName', function (arg1, arg2) {
     //Callback function. Found signature on doc-site.
 })
+
+/**
+ * Extend of the filter
+ */
+webix.ui.datafilter.summAmountColumn = webix.extend({
+    refresh:function(master, node, value){
+        var result = 0;
+        master.mapCells(null, value.columnId, null, 1, function(value){
+            value = value * 1;
+            if (!isNaN(value))
+                result+=value;
+            i+=1;
+            return value;
+        });
+        node.firstChild.innerHTML = '<div class="nowrap text-center">'+getPrice(result)+'</div>';
+    }                                                   
+}, webix.ui.datafilter.summColumn);
