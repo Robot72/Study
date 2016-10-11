@@ -1,6 +1,5 @@
 <?php
 
-
 $eng_string = 'abcdefghijklmnoprst';
 
 $str_length = strlen($eng_string);
