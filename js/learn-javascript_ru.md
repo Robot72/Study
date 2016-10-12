@@ -16,6 +16,10 @@ http://learn.javascript.ru/dom-console
 
 http://learn.javascript.ru/traversing-dom
 
+###Attributes and DOM-properties
+
+http://learn.javascript.ru/attributes-and-custom-properties
+
 ##ОСНОВЫ РАБОТЫ С СОБЫТИЯМИ
 -------------------------
 INTRO BROWSER EVENT
