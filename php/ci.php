@@ -28,3 +28,18 @@ if($sql->num_rows() > 0) {
 } 
 //Ust Query builder
 $sql = $this->db->get_where('TBL_NAME', ['id' => 3, 'name' => 'alex']);
+
+//Load and Get config item:
+$this->load->config('config_name');
+$this->config->item('config_item');
+
+//Work with form validation
+$this->load->library('form_validation');
+if( $this->form_validation->run() ) { ... } else { ... }
+if( $this->form_validation->run('validation_rules') ) { 
+    $field = set_value('name');
+    ...
+} else { 
+    $errors = $this->form_validation->error_array();
+    ...
+}
