@@ -7,3 +7,4 @@ now knows how to persists - теперь знает, как сохраняетс
 is incredibly powerful - невероятно мощный
 and avoid writing a lot of repetitive - и избегать написания много повторяющихся
 semicolon - точка с запятой
+Can I approuch ... ? - Как я могу подойти ... ? (Вопросу или суждению)
