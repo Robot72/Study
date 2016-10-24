@@ -49,3 +49,13 @@ Additional methods that I added within a controller for work with json-response.
             return ($result);
         }
 </pre>
+
+Include js library. Type in view:
+<pre>
+$this->tp->load_helper( 'moment' );
+</pre>
+
+Type within helper:
+<pre>
+<script type="text/javascript" src="/js/moment.js"></script>
+</pre>
