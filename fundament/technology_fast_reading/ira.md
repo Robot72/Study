@@ -2,6 +2,9 @@
 https://people.onliner.by/opinions/2016/10/10/mnenie-547
 https://people.onliner.by/2016/10/09/rabota-23
 
+### Два года "Массала-кодинга". Или как два брата-беларуса построили гейм-дев компанию на юге Индии
+6. App Development Shop
+
 ### Внутреннее устройство поисковых методов
 1. Илья Контор
 2. http://learn.javascript.ru/searching-elements-internals
