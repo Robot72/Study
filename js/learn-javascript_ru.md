@@ -289,3 +289,7 @@ var access = access.toString(2) //Обратно двоичную строку �
 ##Object methods
 ###Object methods, this
 - Reference type
+
+###Conversion objects: toString and valueOf
+There are object methods. I may to override them and use for compare and othere tasks.
+http://learn.javascript.ru/object-conversion
