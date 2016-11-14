@@ -304,3 +304,10 @@ http://learn.javascript.ru/descriptors-getters-setters
     })
 - Object.getOwnPropertyNames(obj)   
 - Object.getOwnPropertyNames(obj, 'prop') // obj[prop]
+
+###Static and Fabric methods
+http://learn.javascript.ru/static-properties-and-methods
+- Общие действия данного типа, имеющие отношения ко всем экземплярам этого типа.
+- Методы не привязанные к конкретному объекту, например сравнение.
+- Вспомогательные методы, которые полезны вне объекта, например для форматирования даты.
+- ФАБРИЧНЫЕ МЕТОДЫ(чтобы не плодить полиморфные меторы или полиморфный конструктор) - улучшают читаемость и поддержку кода, делают более надежной систему.
