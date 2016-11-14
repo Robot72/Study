@@ -293,3 +293,14 @@ var access = access.toString(2) //Обратно двоичную строку �
 ###Conversion objects: toString and valueOf
 There are object methods. I may to override them and use for compare and othere tasks.
 http://learn.javascript.ru/object-conversion
+
+###Object descriptor, getter and setter
+http://learn.javascript.ru/descriptors-getters-setters
+- Object.key(obj)
+- Object.defineProperty(obj, {descriptor: value});
+- Object.defineProperties(obj, {
+    prop: descriptors,
+    prop2: descriptors2
+    })
+- Object.getOwnPropertyNames(obj)   
+- Object.getOwnPropertyNames(obj, 'prop') // obj[prop]
