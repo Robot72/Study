@@ -7,10 +7,10 @@
   - Native
     - "Приемы объектно-ориентированного проектирования" + исследование примеров аналогов на php
   - FW
-    - Symfony book 3
     - Authorization & Authintification *(Аутентификация, авторизация и RBAC в Yii2)*
+    - Yii2 documentation
 - DB 
-  - специалист
+  - специалист БД
 - CSS
 
 ### Инструменты
@@ -24,7 +24,6 @@
   - Special programm for me
     - "English Grammar" Kachalova 
     - 
-  - Symfony book 3
   - ТВП Полиглот
   - Design Destiny
   
