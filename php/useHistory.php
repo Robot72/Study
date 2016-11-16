@@ -41,3 +41,11 @@ while ( $iterator->valid() ) {
     echo $currentKey;
     $iterator->next();
 }
+
+/** 
+Send file to output throw header()
+**/
+header('Content-Type: application/txt');
+header('Content-Disposition: attachment; filename="odata-log.txt"');
+$file = 'text.txt';
+readfile( $file );
