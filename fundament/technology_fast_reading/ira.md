@@ -1,7 +1,8 @@
 ## Планируемые статьи:
-https://people.onliner.by/opinions/2016/10/10/mnenie-547
-https://people.onliner.by/2016/10/09/rabota-23
-https://vc.ru/p/henry-ford
+- https://people.onliner.by/opinions/2016/10/10/mnenie-547
+- https://people.onliner.by/2016/10/09/rabota-23
+- https://vc.ru/p/henry-ford
+- https://vc.ru/p/japanese-startup
 
 ### Два года "Массала-кодинга". Или как два брата-беларуса построили гейм-дев компанию на юге Индии
 6. App Development Shop
