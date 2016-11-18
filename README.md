@@ -11,7 +11,6 @@
     - Yii2 documentation
 - DB 
   - специалист БД
-- CSS
 
 ### Инструменты
 - Сonsole fo the linum 
