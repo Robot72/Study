@@ -311,3 +311,16 @@ http://learn.javascript.ru/static-properties-and-methods
 - Методы не привязанные к конкретному объекту, например сравнение.
 - Вспомогательные методы, которые полезны вне объекта, например для форматирования даты.
 - ФАБРИЧНЫЕ МЕТОДЫ(чтобы не плодить полиморфные меторы или полиморфный конструктор) - улучшают читаемость и поддержку кода, делают более надежной систему.
+
+###Method call and apply
+
+    function showFullName() {
+        return this.firstName + ' ' + this.lastName;
+    }
+
+    var user = {
+        firstName: 'Alexander',
+        lastName: 'Block'
+    };
+
+    showFullName()
