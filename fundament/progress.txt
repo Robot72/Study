@@ -3,12 +3,18 @@ Learning contents       | Rating Nov 24
 St course               |
 St I                    | 
 St m                    |
-Book without name       | 
+Book without name       | +
 Methods book OOP + PHP  | 
 Learn JavaScript        | +
 English Homeworks       | 
+RTR                     |
+Economix                |
+Create BM               |
+Ubuntu book             |
+GitHowTo                |
 
-
+------------------------------------------------------------
+------------------------------------------------------------
 
 Рейтинг c 1авг 2016
 ------------------------------------------------------------
