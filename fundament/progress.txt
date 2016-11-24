@@ -1,4 +1,16 @@
-Содержание обучения     |  Рейтинг c 1авг 2016
+Learning contents       | Rating Nov 24
+------------------------------------------------------------
+St course               |
+St I                    | 
+St m                    |
+Book without name       | 
+Methods book OOP + PHP  | 
+Learn JavaScript        | +
+English Homeworks       | 
+
+
+
+Рейтинг c 1авг 2016
 ------------------------------------------------------------
 St Курс.                | ++++++++
 St I.                   | +++++
@@ -6,8 +18,8 @@ St m                    | +
 Восх.к.инд.             | +++++++
 SymfonyBook3 & gitbook  | +++++++++
 PHP на хабре и др.      | +++
-Приемы ООП + PHP        | +++
-Learn JS                | ++++++++++ | ++++++++++ | +++++
+Methods book OOP + PHP  | +++
+Learn JavaScript        | ++++++++++ | ++++++++++ | +++++
 Codeacademy             | +++
 Английский              | ++++++++++ | +++++
 ТВП "Полиглот"          | +++
