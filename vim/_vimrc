@@ -1,0 +1,30 @@
+set guifont=Consolas:h12
+set guioptions-=T
+set encoding=utf-8
+set fileencodings=utf-8
+set iskeyword=@,a-z,A-Z,48-57,_,128-175,192-255
+set nu
+set autoindent
+
+
+
+" размеры окна
+set lines=100
+set columns=150
+
+" Размер отступов
+set shiftwidth=4
+
+" Размеры табуляций
+set tabstop=4
+set softtabstop=4
+
+" Более "умные" отступы при вставке их с помощью tab. 
+" На самом деле заметить влияние этой опции тяжело, но хуже из-за нее не будет :)
+set smarttab
+
+" Меню выбора кодировки текста (utf8, cp1251, koi8-r, cp866)
+menu Кодировка.utf-8 :e ++enc=utf8 <CR>
+menu Кодировка.windows-1251 :e ++enc=cp1251<CR>
+menu Кодировка.koi8-r :e ++enc=koi8-r<CR>
+menu Кодировка.cp866 :e ++enc=cp866<CR>
