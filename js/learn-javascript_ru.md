@@ -324,3 +324,7 @@ http://learn.javascript.ru/static-properties-and-methods
     };
 
     showFullName()
+
+
+##Others features of the Language
+###[[Class]], instanceof
