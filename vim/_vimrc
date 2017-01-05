@@ -1,4 +1,4 @@
-set guifont=Consolas:h12
+set guifont=Consolas:h10
 set guioptions-=T
 set encoding=utf-8
 set fileencodings=utf-8
@@ -6,7 +6,11 @@ set iskeyword=@,a-z,A-Z,48-57,_,128-175,192-255
 set nu
 set autoindent
 
-
+" Табуляция
+"set tabstop=4
+"set shiftwidth=4
+"set smarttab
+"set expandtab
 
 " размеры окна
 set lines=100
@@ -22,6 +26,11 @@ set softtabstop=4
 " Более "умные" отступы при вставке их с помощью tab. 
 " На самом деле заметить влияние этой опции тяжело, но хуже из-за нее не будет :)
 set smarttab
+
+color darkblue
+
+set dir=c:\\tmp,c:\\temp
+set backupdir=c:\\tmp,c:\\temp
 
 " Меню выбора кодировки текста (utf8, cp1251, koi8-r, cp866)
 menu Кодировка.utf-8 :e ++enc=utf8 <CR>
