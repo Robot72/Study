@@ -7,3 +7,4 @@
 	- https://habrahabr.ru/post/53435/ - Настройка вима для веб-разработки
  - Книга "Просто о vim" (8/72)
  - Удаление .swp файлов http://vim.wikia.com/wiki/Remove_swap_and_backup_files_from_your_working_directory
+ - Набор команд - http://eax.me/vim-commands/
