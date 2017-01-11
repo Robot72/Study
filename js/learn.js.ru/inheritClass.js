@@ -14,7 +14,7 @@ Animal.prototype.run = function (speed) {
 }
 
 function Rabbit(name) {
-	Animal.apply(this, aruments);
+	Animal.apply(this, arguments);
 }
 
 Rabbit.prototype = Object.create(Animal.prototype);
