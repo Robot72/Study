@@ -49,3 +49,10 @@ header('Content-Type: application/txt');
 header('Content-Disposition: attachment; filename="odata-log.txt"');
 $file = 'text.txt';
 readfile( $file );
+
+/**
+ * Work with dateTime
+ */
+$time = new DateTime("2012-09-28");
+$time->modify("+1 day");
+$time->modify("-1 second");
