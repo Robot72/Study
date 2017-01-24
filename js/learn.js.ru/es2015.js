@@ -33,7 +33,7 @@ let expression1 = (a, b, c) => a * b + c
 function defer(f, ms) {
   return function() {
     setTimeout(() => f.apply(this, arguments), ms)
-  }
+  };
 }
 
 function sayHi(who) {
@@ -49,7 +49,7 @@ function defer(f, ms) {
     setTimeout(function() {
       return f.apply(ctx, args);
     }, ms);
-  }
+  };
 }
 
 /**
@@ -77,7 +77,7 @@ let oranges = 5;
 
 /**
  * Objects and prototypes
- */
+ *
 
 let user = {
     name,
@@ -104,8 +104,8 @@ let rabbit = {
         super.walk();
     }
 };
-
 rabbit.walk();
+*/
 let comment = `Улучшения в описании свойств:
 
     Запись name: name можно заменить на просто name
@@ -124,3 +124,70 @@ let comment = `Улучшения в описании свойств:
     Метод Object.assign(target, src1, src2...) – копирует свойства из всех аргументов в первый объект.
     Метод Object.is(value1, value2) проверяет два значения на равенство. В отличие от === считает +0 и -0 разными числами. А также считает, что NaN равно самому себе.
 `;
+
+/*
+ * Classes
+ */
+
+class User {
+
+  constructor(name) {
+    this.name = name;
+  }
+
+    sayHi() {
+        alert(`Hello ${this.name}!`);
+    }
+
+    get age() {
+      return this.age;
+    }
+
+    set age(age) {
+        if(age < 0) {
+            throw new Error('Возвраст не может быть отрицательным');
+        } else {
+            this.age = age;
+        }
+    }
+
+}
+
+class Admin extends User {
+
+  good() {
+      alert('good');
+  }
+
+}
+
+let admin = new Admin("Вася");
+let user = new User('John');
+user.gooooood = 'd';
+
+let aObj = {
+    a: 'd',
+    b: 'd'
+};
+let bObj = {
+    c: 'd'
+};
+Object.is(aObj, bObj);
+
+/**
+ * Data type is Symbol
+ */
+
+let symbol = Symbol();
+
+/**
+ * Itarators
+ */
+
+for(let value of arr1) {
+    //console.log(value);
+}
+
+for(let value of "GOOOO") {
+    //console.log(value);
+}
