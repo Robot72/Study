@@ -191,3 +191,31 @@ for(let value of arr1) {
 for(let value of "GOOOO") {
     //console.log(value);
 }
+
+let range = {
+    from: 0,
+    to: 50,
+    [Symbol.iterator]() {
+        let current = this.from;
+        let last = this.to;
+
+        return {
+            next() {
+                if(current <= last) {
+                    return {
+                        value: current++,
+                        done: false
+                    };
+                } else {
+                    return {
+                        done: true
+                    };
+                }
+            }
+        }
+    }
+};
+
+for(let v of range) {
+}
+
