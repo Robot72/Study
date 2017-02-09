@@ -1,0 +1,46 @@
+1. Readable
+2. Writable
+3. Duplex
+4. Transform
+
+.on('data')
+.on('readable')
+.pipe()
+
+paused
+const stream = fs.createReadStream(__filename)
+stream.pipe(dest)
+
+'close'
+'finish'
+---
+fsReadStream
+
+
+setTimeout(() => {
+  stream.unpipe(dest);
+
+  stream.on('data', (chunk) => {
+    ...
+  })
+}, 1000)
+
+Buffer: [asdkljfaskf]
+
+.pause()
+.on('readable', () => {
+  /*
+    check permissions
+    ...
+  */
+  const data = stream.read()
+})
+
+flowing
+.pipe(dest)
+.on('data', data => {})
+
+.resume()
+
+---
+streams1 -> streams2 -> streams3
