@@ -33,7 +33,8 @@
 
 let url = require('url');
 let fs = require('fs');
-let mime = require('/usr/lib/node_modules/mime/mime');
+//let mime = require('/usr/lib/node_modules/mime/mime');
+let mime = require('mime');
 let validation = require('./validation');
 let streamWrap = require('./stream-wrap');
 
@@ -84,17 +85,18 @@ require('http').createServer(function(req, res) {
     //Загрузка файла на сервер  
     case 'POST': 
       
-      let validObj = validation.isValidPath(pathname, directory);
-      console.log(pathname);
-      console.log(validObj);
-      //Если файла нет, то пишем(еще предстоит переделать валидатор под запись)
-      if( validObj.valid == false) {
-        console.log(validObj.filePath);
-        streamWrap.writeFile(validObj.filePath, req, res);
+      //let validObj = validation.isValidPath(pathname, directory);
+      pathname = pathname.slice(1);
+      if(pathname.includes('/') || pathname.includes('..')) {
+        res.statusCode = 400;
+        res.end(`The filename isn't allow!`);
+      } else if(pathname != '') {
+        streamWrap.writeFile(pathname, req, res);
       } else {
-        res.statusCode = 409;
-        res.end('Not write. File exists.');
+        res.statusCode = 404;
+        res.end('Page not found. Filename is empty.');
       }
+      //res.end('goodtest');
       break;
       
     //Удаление файла

@@ -37,7 +37,7 @@ function isValidPath(filePath, directory) {
       };
     }
     
-    let stat = fs.statSync(filePath);
+    let stat = fs.statSync(filePath); // TODO delete
     if( !stat.isFile() ) {
       return {
         valid: false,

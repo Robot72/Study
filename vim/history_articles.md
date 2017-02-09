@@ -8,3 +8,4 @@
  - Книга "Просто о vim" (8/72)
  - Удаление .swp файлов http://vim.wikia.com/wiki/Remove_swap_and_backup_files_from_your_working_directory
  - Набор команд - http://eax.me/vim-commands/
+ - Список команд - https://www.8host.com/blog/ustanovka-i-ispolzovanie-tekstovogo-redaktora-vim/

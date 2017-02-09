@@ -35,6 +35,7 @@ function readFile(fileName, response) {
 }
 
 function writeFile(fileName, request, response) {
+  fileName = 'public/files/' + fileName;
   let writable = fs.WriteStream(fileName, {flags: 'wx'});
   
   let size = 0;
@@ -78,6 +79,7 @@ function writeFile(fileName, request, response) {
     }
   })
   .on('close', () => {
+    console.log('good wrote!');
     response.end('Ok');
   });
 }

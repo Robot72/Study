@@ -219,3 +219,80 @@ let range = {
 for(let v of range) {
 }
 
+let str = 'Hello world!';
+let iterator = str[Symbol.iterator]();
+
+while(true) {
+    let result = iterator.next();
+    if(result.done)
+        break;
+    //console.log(result.value);
+}
+
+/**
+ * Set, Map, Weak, SetWeak.
+ */
+let map = new Map([
+    [1, '123'],
+    ['1', '321']
+]);
+
+//console.log( map.get(1) );
+//console.log( map.get('1') );
+
+/**
+ * Promise
+ */
+
+function httpGet(url) {
+    return new Promise(function (resolve, reject) {
+        let xml = new XMLHttpRequest();
+
+        xml.open('GET', url, true);
+
+        xml.onload = function () {
+            if(this.status == 200) {
+                resolve(this.responseXML);
+            } else {
+                let error = new Error(this.statusText);
+                error.code = this.status;
+                reject(error);
+            }
+        };
+
+        xml.onerror = function () {
+            reject(new Error('Network error!'));
+        };
+
+        xml.send();
+    });
+}
+
+/*httpGet('//')
+    .then(response => {
+
+    })
+    .then(user => {
+
+    })
+    .then(githubUser => {
+
+    });*/
+
+/**
+ * Generators
+ */
+
+function* generateSequence(start, end) {
+    for(let i = start; i <= end; i++) {
+        yield String.fromCharCode(i);
+    }
+}
+
+function* generateAlpha() {
+    yield* generateSequence(65, 90);
+    yield* generateSequence(97, 122);
+}
+
+let seq = generateAlpha();
+console.log(...seq);
