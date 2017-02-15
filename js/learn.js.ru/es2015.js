@@ -294,5 +294,28 @@ function* generateAlpha() {
     yield* generateSequence(97, 122);
 }
 
-let seq = generateAlpha();
-console.log(...seq);
+//let seq = generateAlpha();
+
+function* jsTesting() {
+    let answer1 = yield 'Have the generator got a next method?';
+
+    let answer2 = yield 'Have the generator property "done"?';
+
+    let answer11 = 'First answer - bad.';
+    if(answer1 == 'yes') {
+        answer11 = 'First anwer - good';
+    }
+
+    let answer22 = 'Second answer - bad.';
+    if(answer2 == 'yes') {
+        answer22 = 'Second answer - good';
+    }
+
+    return `${answer11} ${answer22}` ;
+}
+
+var testingSituation = jsTesting();
+
+function* showLinks() {
+    let link1 = yield new Promise( timeout => setTimeout(timeout, 3000) );
+}
