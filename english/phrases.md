@@ -1,0 +1,3 @@
+ - Start-up times matter for performance-sensitive code.
+ - It’s important to holistically measure and understand where our real bottlenecks are.
+ - 

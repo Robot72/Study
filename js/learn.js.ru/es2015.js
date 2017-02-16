@@ -268,6 +268,20 @@ function httpGet(url) {
     });
 }
 
+let promise = new Promise((resolve, reject) => {
+   setTimeout(() => {
+        resolve('resolve');
+   }, 1000);
+});
+
+promise.then(
+    resolve => {
+        console.log('Promise is fulfilled: ' + resolve);
+    }, reject => {
+        console.log('Promise is fulfilled: ' + reject);
+    }
+);
+
 /*httpGet('//')
     .then(response => {
 
