@@ -9,3 +9,6 @@
  - Can I approuch ... ?
  - On desktop, most took 8 seconds to be fully usable on a cable connection.
  - Not as large as I had guessed, but there's room for improvement.
+ - ... necessarily increase linearly ...
+ - ... affected on subsequent ...
+ - What can we do to lower ... ?

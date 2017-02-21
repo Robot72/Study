@@ -1,0 +1,6 @@
+- during - во время
+- ability - возможность, способность
+- shipping (noun)
+- offender (noun)
+- huge (adj)
+- regardless (adverb)
