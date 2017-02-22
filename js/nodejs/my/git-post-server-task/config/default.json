@@ -1,0 +1,5 @@
+{
+  "publicDir": "public/files/",
+  "publicDir2": "/public/files",
+  "maxSize": "23e100"
+}

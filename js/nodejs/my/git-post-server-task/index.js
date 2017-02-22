@@ -1,5 +1,5 @@
 /**
- * 
+ *
  ЗАДАЧА
  Написать HTTP-сервер для загрузки и получения файлов
  - Все файлы находятся в директории files
@@ -29,12 +29,11 @@
 
 // Пример простого сервера в качестве основы
 
-'use strict';
-
 let url = require('url');
 let fs = require('fs');
 //let mime = require('/usr/lib/node_modules/mime/mime');
 let mime = require('mime');
+let config = require('config');
 let validation = require('./validation');
 let streamWrap = require('./stream-wrap');
 
@@ -44,12 +43,12 @@ require('http').createServer(function(req, res) {
   let parsedURL = url.parse(req.url);
   let pathname = decodeURI(parsedURL.pathname);
   let directory = `${__dirname}/public/files`;
-  
+
   switch(req.method) {
     //Получение файла
     case 'GET':
       if (pathname == '/') {
-        
+
         fs.readFile(__dirname + '/public/index.html', (error, data) => {
           if (error) {
             console.error(error);
@@ -57,34 +56,35 @@ require('http').createServer(function(req, res) {
             res.end('Sorry! Server error.');
           }
           res.setHeader('Content-Type', 'text/html;charset=utf-8');
+          console.log(req.headers);
           res.end(data);
         });
         return;
-        
+
       } else {
-        
+
         let validObj = validation.isValidPath(pathname, directory);
-        
+
         if( validObj.valid ) {
           let mimeType = mime.lookup(validObj.filePath);
           res.setHeader('Content-Type', `${mimeType}; charset=utf-8`);
-          
+
           streamWrap.readFile(validObj.filePath, res);
-          
+
         } else {
-          
+
           //console.log(validObj);
           res.statusCode = validObj.statusCode;
           res.end(validObj.message);
-          
+
         }
-      
+
       }
       break;
-      
-    //Загрузка файла на сервер  
-    case 'POST': 
-      
+
+    //Загрузка файла на сервер
+    case 'POST':
+
       //let validObj = validation.isValidPath(pathname, directory);
       pathname = pathname.slice(1);
       if(pathname.includes('/') || pathname.includes('..')) {
@@ -98,7 +98,7 @@ require('http').createServer(function(req, res) {
       }
       //res.end('goodtest');
       break;
-      
+
     //Удаление файла
     case 'DELETE':
       break;
@@ -107,7 +107,7 @@ require('http').createServer(function(req, res) {
       res.statusCode = 502;
       res.end("Not implemented");
       break
-      
+
   }
 
 }).listen(3000);
