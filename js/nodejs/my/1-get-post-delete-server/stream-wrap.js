@@ -1,5 +1,3 @@
-'use strict'
-
 let fs = require('fs');
 let config = require('config');
 
@@ -85,5 +83,18 @@ function writeFile(fileName, request, response) {
   });
 }
 
+function deleteFile(fileName, request, response) {
+  fileName = config.get('publicDir') + fileName;
+  fs.unlink(fileName, (error) => {
+    console.log(error); // Как я понял из api node, то переменная error не существует, когда успешно выполнено удаление
+    if(typeof error !== 'undefined' && error.code == 'ENOENT') {
+      response.statusCode = 404;
+      response.end('File not found.');
+    }
+
+  });
+}
+
 module.exports.readFile = readFile;
 module.exports.writeFile = writeFile;
+module.exports.deleteFile = deleteFile;

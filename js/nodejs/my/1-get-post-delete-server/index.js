@@ -101,6 +101,7 @@ require('http').createServer(function(req, res) {
 
     //Удаление файла
     case 'DELETE':
+      streamWrap.deleteFile(pathname.slice(1), req, res);
       break;
 
     default:
