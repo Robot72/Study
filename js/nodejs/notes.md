@@ -1,3 +1,9 @@
+### Notes about Node.js
+## Links
+
+- Frameworks Overveiw https://itnan.ru/post.php?c=1&p=316244
+- Testing with use mocha, chai https://habrahabr.ru/post/308352/
+
 ## Событийный цикл, LibUV
 
 Область ответсвтенности:
