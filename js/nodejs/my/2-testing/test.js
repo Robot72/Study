@@ -1,12 +1,28 @@
-var assert = require('assert');
+let assert = require('assert');
+let server = require('../1-get-post-delete-server/server');
+let rp = require('request-promise');
 
-describe('Array', function() {
-  describe('#indexOf()', function() {
-    it('should return -1 when the value is not present', function () {
-      assert.equal(-1, [1,2,3].indexOf(5));
+let app;
+
+describe('Server test', () => {
+
+  before((done) => {
+    app = server.listen(3000, done);
+  });
+
+  after((done) => {
+    app.close(done);
+  });
+
+  context('GET request', () => {
+
+    it('should return index.html', async () => {
+      let response = await rp('http://localhost:3000/', {
+        resolveWithFullResponse: true
+      });
+      assert.equal(response.statusCode, 200);
+      assert.equal(response.headers['content-type'], 'text/html');
     });
-    it('should return 0 when the value is present', function () {
-      assert.equal(0, [1, 2, 3].indexOf(1));
-    })
+
   })
 });
