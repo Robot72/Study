@@ -1,26 +1,90 @@
-#Document, Events, Interfaces
-##Документ и объекты страницы
-###Окружение: DOM, BOM и JS
+# Document, Events, Interfaces
+## Документ и объекты страницы
+### Окружение: DOM, BOM и JS
 BOM - объектная модель браузера.
-###Дерево DOM
+### Дерево DOM
 http://learn.javascript.ru/dom-nodes
 - DOM - это представление документа в виде дерева объектов, доступное для изменения в JS.
 
-###Работа с DOM из консоли
+### Работа с DOM из консоли
 
 http://learn.javascript.ru/dom-console
 - Переместится из консоли в элементы
 - Выбрать в консоли последние элементы js-ом ($0)
 
-###Навигация по DOM-элементам
+### Навигация по DOM-элементам
 
 http://learn.javascript.ru/traversing-dom
 
-###Attributes and DOM-properties
+### Attributes and DOM-properties
 
 http://learn.javascript.ru/attributes-and-custom-properties
 
-##ОСНОВЫ РАБОТЫ С СОБЫТИЯМИ
+### Summary
+- Creat&Clone element
+  - document.createElement('div');
+  - document.createTextNode('Exciting today!');
+  - document.cloneNode(deep); //if (deep == false) than clone without clildren
+- Node properties
+  - node.nodeType * 1(element), 3(text) *
+  - elem.tagName
+  - elem.innerHTML
+  - elem.outerHTML
+  - node.data & node.nodeValue
+  - node.textNode (IE9+)
+  - elem.hidden (true/false) (IE10+)
+- Attributes
+  - elem.getAttrubute(attrName), elem.hasAttribute(attrName), elem.setAttribute(attrName)
+  - elem.dataset.* (IE10+)
+- Links
+  - document.documentElement
+  - document.body
+  - document.head (IE9+)
+  - Only elemens: (All IE9+, except "children" that work IE8-)
+    - parentElement
+    - nextElementSubling
+    - previousElementSubling
+    - children, firstElementChild, lastElementChild
+  - table.rows[N]
+  - tr.cells[N]
+- Search
+  - \*.querySelector(css);
+  - \*.querySelectorAll(css);
+  - document.getElementById(id);
+  - document.getElementsByClassName(class);
+  - document.getElementsByTagName(tag);
+  - document.getElementsByTagName(tag);
+  - document.getElementsByName(name);
+  - elem.matches(css);
+  - elem.closest(css);
+  - elem1.contains(elem2);
+  - elem1.compareDocumentPosition(elem2);
+- Updating
+  - parent.appendChild(clildElem);
+  - parent.removeChild(child);
+  - parent.insertBefore(newChild, refNode);
+  - parent.insertAfter(newChild, refNode);
+  - parent.insertAdjacentHTML("beforeBegin|afterBegin|beforeEnd|afterEnd", html);
+  - document.write(....);
+- Classes&Styles
+  - elem.className
+  - elem.classList.add(class), remove(class), toggle(class), contains(class) IE10+
+  - elem.style
+  - getComputedStyle(elem, '')
+- Elements Size&Scroll
+  - clientLeft/Top
+  - clientWidth/Height
+  - scrollWidth/Height
+  - scrollLeft/Top
+  - offsetWidth/Height
+- Page Size&Scroll
+  - document.documentElement.clientHeight - height showing area
+  - window.pageYOffset || document.documentElement.scrollTop - read scrool
+  - window.scrollBy()
+
+
+
+## ОСНОВЫ РАБОТЫ С СОБЫТИЯМИ
 -------------------------
 INTRO BROWSER EVENT
 -------------------
@@ -87,7 +151,7 @@ http://learn.javascript.ru/event-bubbling
 
     - Во-первых, событие должно всплывать. Нельзя, чтобы какой-то промежуточный обработчик вызвал event.stopPropagation() до того, как событие доплывёт до нужного элемента.
     - Во-вторых, делегирование создает дополнительную нагрузку на браузер, ведь обработчик запускается, когда событие происходит в любом месте контейнера, не обязательно на элементах, которые нам интересны. Но обычно эта нагрузка настолько пустяковая, её даже не стоит принимать во внимание.
-    
+
 ПРИЕМ ПРОЕКТИРОВАНИЯ "ПОВЕДЕНИЕ"
 --------------------------------
 Прием состоит из двух частей:
@@ -134,7 +198,7 @@ http://learn.javascript.ru/event-bubbling
 Для поиска всех совпадений:
 - Найти массив совпадений – str.match(reg), с флагом g.
 - Получить все совпадения, с подробной информацией о каждом – regexp.exec(str) с флагом g, в цикле.
-Для поиска-и-замены: : - Замена на другую строку или результат функции -- `str.replace(reg, str|func)` 
+Для поиска-и-замены: : - Замена на другую строку или результат функции -- `str.replace(reg, str|func)`
 Пример "регулярки":
 `srt.replace(/hello/gi, 'bye-bye');`
 Для разбивки строки на части:
@@ -177,15 +241,15 @@ http://learn.javascript.ru/event-bubbling
 Все числа в JavaScript, как целые так и дробные, имеют тип Number и хранятся в 64-битном формате IEEE-754, также известном как «double precision».
 
 Способы записи:
-    
+
     0xFF
     2e10
     2e-5
-    
+
 Деление на ноль и Infinity
 
-NaN (Not a number) 
-    
+NaN (Not a number)
+
     Возвращается, когда не может быть совершена математическая операция.
     Значение NaN – единственное, в своем роде, которое не равно ничему, включая себя.
     Значение NaN можно проверить специальной функцией isNaN(n),
@@ -210,14 +274,14 @@ http://learn.javascript.ru/string
     while( (pos = str.indexOf(target, pos + 1)) != -1 ) {
         alert(pos);
     }
-    
+
     String.fromCharCode(1024)   //Получает символ по его коду
     str.charCodeAt(pos);      //получает код символа
-    
+
     //Сравнение строк! Самый надедный способ:
-    var str = "Вася"; 
+    var str = "Вася";
     var str.localeCompore(str2); // return -1 or 0 or 1 . Подробно эта тема освещена http://learn.javascript.ru/intl
-    
+
 
 ###Methods of the array
 
@@ -253,7 +317,7 @@ http://learn.javascript.ru/array-methods
     LEFT SHIFT(левый сдвиг) ( << )
     RIGHT SHIFT(правый сдвиг) ( >> )
     ZERO-FILL RIGHT SHIFT(правый сдвиг с заполнением нулями) ( >>> )
-    
+
 Функции для работы с побитовыми операторами
 var access = parseInt('110000', 2); //Получение числа из строки
 var access = access.toString(2) //Обратно двоичную строку из числа
@@ -281,7 +345,7 @@ var access = access.toString(2) //Обратно двоичную строку �
 - даже если имя поставить, то работать не будет, разрешено вызывать на месте только Function Expression.
 
     Узнал о Lodach библиотеке, может делать глубокую копию объектов. Еще узнал о том, что модуль можно передать через return(экспорт, через return), а не только через свойство window.
-    
+
 ### Manage by memory
 - http://learn.javascript.ru/memory-management
 - https://ru.wikipedia.org/wiki/%D0%A1%D0%B1%D0%BE%D1%80%D0%BA%D0%B0_%D0%BC%D1%83%D1%81%D0%BE%D1%80%D0%B0_(%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5)
