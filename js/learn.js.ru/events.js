@@ -1,6 +1,7 @@
 let selectedTd = false;
 let table = document.getElementById('table-g');
 
+/* Delegate events */
 function updateTd (target) {
   if( selectedTd ) {
     selectedTd.style.backgroundColor = 'black';
@@ -48,3 +49,59 @@ function Menu(elem) {
 }
 
 new Menu( document.getElementById('menu') );
+
+/* Beahviors */
+document.addEventListener('click', function (e) {
+  if(! e.target.hasAttribute('data-counter')) {
+    return;
+  }
+
+  let counter = e.target;
+  counter.innerHTML++;
+});
+
+document.addEventListener('click', function (e) {
+  let target = e.target;
+  let id = target.getAttribute('data-toggle-id');
+  if(!id) return;
+
+  let elem = document.getElementById(id);
+  elem.hidden = !elem.hidden;
+});
+
+/* Browse events */
+
+document.addEventListener('wheel', function (e) {
+});
+
+document.addEventListener('contextmenu', (e) => {
+  let elem = document.getElementById('context-menu');
+  elem.innerHTML++;
+});
+
+/* My events */
+
+function hideBlock() {
+  let event = new Event('hide', {bubbles: true, cancelable: false});
+  let elem = document.getElementById('strangeBlock');
+  elem.dispatchEvent(event);
+  strangeBlock.hidden = true;
+}
+
+let elem = document.getElementById('strangeBlock');
+elem.addEventListener('hide', (e) => {
+  console.log('handler 1')
+});
+elem.addEventListener('hide', (e) => {
+  console.log('handler 2')
+});
+elem.addEventListener('hide', (e) => {
+  console.log('handler 3')
+});
+elem.addEventListener('hide', (e) => {
+  // alert('handler 4')
+});
+
+setTimeout(() => {
+  hideBlock();
+}, 2000);
