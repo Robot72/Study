@@ -276,9 +276,9 @@ let promise = new Promise((resolve, reject) => {
 
 promise.then(
     resolve => {
-        console.log('Promise is fulfilled: ' + resolve);
+        // console.log('Promise is fulfilled: ' + resolve);
     }, reject => {
-        console.log('Promise is fulfilled: ' + reject);
+        // console.log('Promise is fulfilled: ' + reject);
     }
 );
 
