@@ -1,6 +1,9 @@
-- during - во время
-- ability - возможность, способность
-- shipping (noun)
-- offender (noun)
-- huge (adj)
-- regardless (adverb)
+- during              - во время
+- ability             - возможность, способность
+- shipping (noun)     - доставка, отгрузка
+- offender (noun)     - правонарушитель, преступник, провинившийся
+- huge (adj)          - большой, огромный, громадный
+- regardless (adverb) - независимо от
+- capacity            - емкость
+- revesting           - восстановление
+- abusing             - злоупотребление
