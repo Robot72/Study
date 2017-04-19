@@ -7,6 +7,9 @@ Cервисы для изучения программирования - https:/
 Проектное ОБУЧЕНИЕ - https://medium.com/krol-institute/проектное-обучение-1daab521b4ff#.5p5ceatqc
 Продуктивность в корпарациях - https://vc.ru/p/productivity-in-corporations
 
+## Ideis for sites
+Created concurse for my dear users - https://xakep.ru/2017/04/15/wannabe-xakep/
+
 //Haxlet links
 Для мотивации в ит-инженерии - https://www.youtube.com/watch?v=oeDkQbju7xw
 
