@@ -3,7 +3,7 @@ git config --global alias.rh 'reset HEAD'
 git config --global alias.cc 'revert HEAD --no-edit' //Cancel commit
 
 //Just commands:
-git reset --hard [hash] // Reset commit 
+git reset --hard [hash]&[tag] // Reset commit 
 git commit --amend -m "Text message" //Update last commit
 git mv file_name path_to_move
 git log --max-count=1
