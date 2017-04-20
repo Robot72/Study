@@ -1,4 +1,5 @@
 #Set of texts for reading
+- Рынок образовательных услуг - https://vc.ru/p/edtech-investigation
 - Бизнес на бицепсах: как мы монетизировали фитнес-приложение - https://spark.ru/startup/myfitnessapp/blog/28449/biznes-na-bitsepsah-kak-mi-monetizirovali-fitnes-prilozhenie
 - Про первые продажи - https://spark.ru/startup/rassrochka-24/blog/28448/pro-pervie-prodazhi
  - https://people.onliner.by/opinions/2016/10/31/mnenie-563 - то, что алкоголь в малых дозах может быть полезен - вранье
