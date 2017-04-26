@@ -42,7 +42,7 @@ while ( $iterator->valid() ) {
     $iterator->next();
 }
 
-/** 
+/**
 Send file to output throw header()
 **/
 header('Content-Type: application/txt');
@@ -56,3 +56,6 @@ readfile( $file );
 $time = new DateTime("2012-09-28");
 $time->modify("+1 day");
 $time->modify("-1 second");
+
+$dt = DateTime::createFromFormat('d-m-Y H:i:s', '10-10-2010');
+$dt->format('d.m.Y');
