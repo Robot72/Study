@@ -8,7 +8,7 @@ function accept(req, res) {
     'Content-Type': 'text/json',
     'Cache-Control': 'no-cache'
   });
-
+  console.log(req.url);
   res.end('{"status": "OK"}');
 }
 
