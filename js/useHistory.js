@@ -1,4 +1,4 @@
-//
+/** Get all properties an object **/
 var Obj = {
     id: 2,
     name: 'Test'
