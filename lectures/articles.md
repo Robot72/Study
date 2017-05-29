@@ -24,6 +24,9 @@ Created concurse for my dear users - https://xakep.ru/2017/04/15/wannabe-xakep/
 https://dev.by/lenta/main/yurlikbez-aytishnika-vybor-dogovornoy-modeli
 https://dev.by/lenta/main/yurlikbez-aytishnika-kakie-dokumenty-oformlyat-pri-nayme-sotrudnikov
 
+//REALTY
+Анализ рынка недвижимости методом случайного леса - https://habrahabr.ru/post/329504/
+
 /* PHP section*/
 https://habrahabr.ru/post/258139/                               - PHP7
 https://habrahabr.ru/post/280071/                               - PHP7
