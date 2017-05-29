@@ -16,7 +16,7 @@ module.exports = {
     // publicPath: "/assets/", // string
     // the url to the output directory resolved relative to the HTML page
 
-    // library: "MyLibrary", // string,
+    library: "home", // string,
     // the name of the exported library
 
     // libraryTarget: "umd", // universal module definition
@@ -24,4 +24,8 @@ module.exports = {
 
     /* Advanced output configuration (click to show) */
   },
+  watch: true,
+  watchOptions: {
+      aggregateTimeout: 100
+  }
 }
