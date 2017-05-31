@@ -1,5 +1,9 @@
 const path = require('path');
 
+// const process.env.NODE_ENV = 'development';
+const NODE_ENV = 'development';
+const webpack = require('webpack');
+
 module.exports = {
   entry: "./home", // string | object | array
 
@@ -24,8 +28,12 @@ module.exports = {
 
     /* Advanced output configuration (click to show) */
   },
-  watch: true,
+  watch: NODE_ENV == 'development',
   watchOptions: {
       aggregateTimeout: 100
-  }
+  },
+  devtool: NODE_ENV == 'development' ? 'source-map' : 'nosources-source-map',
+  plugins: [
+      new webpack.EnvironmentPlugin('NODE_ENV')
+  ]
 }
