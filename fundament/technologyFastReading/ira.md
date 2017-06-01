@@ -3,6 +3,8 @@
 - https://people.onliner.by/2016/10/09/rabota-23
 - https://vc.ru/p/henry-ford
 - https://vc.ru/p/japanese-startup
+- Марк Цукерберг - https://vc.ru/p/zuckerberg-harvard
+- 9 ошибок начинающих руководителей - https://vc.ru/p/yanachalnik
 
 ### Mictoservices
 1. Владимир Хориков

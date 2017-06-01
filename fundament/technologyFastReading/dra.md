@@ -1,3 +1,6 @@
+## Планируемые статьи:
+- Сбор симантики для контекста - https://vc.ru/p/semantics-context
+
 ### CodeIgniter 4
 https://habrahabr.ru/post/275657/
 #### По разделам:
