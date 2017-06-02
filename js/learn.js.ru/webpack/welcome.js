@@ -6,4 +6,6 @@ let welcomeMessage = (message) => {
     }
 }
 
+let a = 1;
+
 module.exports = welcomeMessage;
