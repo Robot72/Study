@@ -12,3 +12,4 @@ git cat-file -p [hash] //Output info about commit-object
 git branch [branch_name] //Create branch
 git checkout [branch_name] //Switch to the branch
 git checkout -b [branch_name] //Create and switch to branch
+git shortlog -s //Count commits by users
