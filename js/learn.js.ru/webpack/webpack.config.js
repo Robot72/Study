@@ -1,5 +1,5 @@
 const path = require('path');
-// const process.env.NODE_ENV = 'development';
+//const process.env.NODE_ENV = 'development';
 const NODE_ENV = 'development';
 const webpack = require('webpack');
 
@@ -16,23 +16,26 @@ module.exports = {
 	},
 	devtool: NODE_ENV == 'development' ? 'source-map' : 'nosources-source-map',
 	plugins: [
-		new webpack.EnvironmentPlugin('NODE_ENV')/*,
+		new webpack.EnvironmentPlugin('NODE_ENV'),
         new webpack.optimize.UglifyJsPlugin({
             compress: {
                 warnings: false,
-            },
+                drop_console: true,
+                unsafe: true
+            }/*,
             output: {
                 comments: false,
-            },
-        })*/
+            },*/
+        })
 	],
 	module: {
-		loaders: [{
-			test: /\.js$/,
-			loader: 'babel-loader',
-            query : {
-                presets: [ 'es2016' ]
-            }
-		}]
+		rules: [{
+                test: /\.js$/,
+                exclude: [/node_modules/],
+                use: [{
+                    loader: 'babel-loader',
+                    options: { presets: ['es2015'] }
+                }]
+            }]
 	}
 }
