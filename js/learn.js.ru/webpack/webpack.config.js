@@ -4,7 +4,11 @@ const NODE_ENV = 'development';
 const webpack = require('webpack');
 
 module.exports = {
-	entry: "./home",
+    context: './frontend',
+	entry: {
+        home: './home',
+        contact: './contact',
+    },
 
 	output: {
 		filename: "bundle.js",
@@ -17,16 +21,12 @@ module.exports = {
 	devtool: NODE_ENV == 'development' ? 'source-map' : 'nosources-source-map',
 	plugins: [
 		new webpack.EnvironmentPlugin('NODE_ENV'),
-        new webpack.optimize.UglifyJsPlugin({
+        /*new webpack.optimize.UglifyJsPlugin({
             compress: {
                 warnings: false,
-                drop_console: true,
-                unsafe: true
-            }/*,
-            output: {
-                comments: false,
-            },*/
-        })
+                drop_console: false,
+            }
+        }),*/
 	],
 	module: {
 		rules: [{
