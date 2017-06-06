@@ -64,3 +64,4 @@ http://all-politologija.ru/knigi/politologiya-uchebnoe-posobie-kruglova/zakonoda
 http://www.hist.bsu.by/images/stories/files/nauka/konf/rol/ageenkova.pdf
 https://habrahabr.ru/post/308526/ //Math
 mathsisfun.com - развлекательная МАТЕМАТИКА!
+Любопытные вещи на AliExpress - https://lifehacker.ru/2017/05/26/aliexpress-79/
