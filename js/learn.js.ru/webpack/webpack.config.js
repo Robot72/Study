@@ -18,9 +18,13 @@ module.exports = {
 	watchOptions: {
 		aggregateTimeout: 100
 	},
-	devtool: NODE_ENV == 'development' ? 'source-map' : 'nosources-source-map',
+	// devtool: NODE_ENV == 'development' ? 'source-map' : 'nosources-source-map',
 	plugins: [
+        new webpack.NoEmitOnErrorsPlugin(),
 		new webpack.EnvironmentPlugin('NODE_ENV'),
+        new webpack.optimize.CommonsChunkPlugin({
+            name: 'common'
+        }),
         /*new webpack.optimize.UglifyJsPlugin({
             compress: {
                 warnings: false,
@@ -30,12 +34,13 @@ module.exports = {
 	],
 	module: {
 		rules: [{
-                test: /\.js$/,
-                exclude: [/node_modules/],
-                use: [{
-                    loader: 'babel-loader',
-                    options: { presets: ['es2015'] }
-                }]
+            test: /\.js$/,
+            exclude: [/node_modules/],
+            use: [{
+                loader: 'babel-loader',
+                options: { presets: ['es2015'] }
             }]
-	}
+        }]
+	},
+    stats: 'normal'
 }
