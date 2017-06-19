@@ -4,15 +4,14 @@ const NODE_ENV = 'development';
 const webpack = require('webpack');
 
 module.exports = {
-    context: __dirname + '/frontend',
+	context: __dirname + '/frontend',
 	entry: {
-        home: './home',
-        contact: './contact',
-    },
+		app: './app',
+	},
 	output: {
-        path: __dirname + '/public',
+		path: __dirname + '/public',
 		filename: "[name].js",
-		library: "[name]",
+    publicPath: '/'
 	},
 	watch: NODE_ENV == 'development',
 	watchOptions: {
@@ -20,27 +19,29 @@ module.exports = {
 	},
 	// devtool: NODE_ENV == 'development' ? 'source-map' : 'nosources-source-map',
 	plugins: [
-        new webpack.NoEmitOnErrorsPlugin(),
+		new webpack.NoEmitOnErrorsPlugin(),
 		new webpack.EnvironmentPlugin('NODE_ENV'),
-        new webpack.optimize.CommonsChunkPlugin({
-            name: 'common'
-        }),
-        /*new webpack.optimize.UglifyJsPlugin({
-            compress: {
-                warnings: false,
-                drop_console: false,
-            }
-        }),*/
+		new webpack.optimize.CommonsChunkPlugin({
+			name: 'common'
+		}),
+		/*new webpack.optimize.UglifyJsPlugin({
+		    compress: {
+		        warnings: false,
+		        drop_console: false,
+		    }
+		}),*/
 	],
 	module: {
 		rules: [{
-            test: /\.js$/,
-            exclude: [/node_modules/],
-            use: [{
-                loader: 'babel-loader',
-                options: { presets: ['es2015'] }
-            }]
-        }]
+			test: /\.js$/,
+			exclude: [/node_modules/],
+			use: [{
+				loader: 'babel-loader',
+				options: {
+					presets: ['es2015']
+				}
+			}]
+		}]
 	},
-    stats: 'normal'
+	stats: 'normal'
 }
