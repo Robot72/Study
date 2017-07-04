@@ -1,3 +1,4 @@
+let _ = require('lodash');
 let button = document.querySelector('#btn');
 let contact = document.querySelector('#contact');
 
@@ -14,6 +15,15 @@ let clickLogout = () => {
     contact();
   }, 'core');
 };
+
+let users = [
+  {id: 1, name: 'Jack'},
+  {id: 2, name: 'Alex'},
+  {id: 3, name: 'John'}
+];
+
+let pluckedUsers = _.pluck(users, 'name');
+alert(pluckedUsers);
 
 button.addEventListener('click', clickBtn);
 button.addEventListener('click', clickLogout);

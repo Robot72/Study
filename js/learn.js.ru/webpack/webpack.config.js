@@ -43,5 +43,8 @@ module.exports = {
 			}]
 		}]
 	},
-	stats: 'normal'
+	stats: 'normal',
+  externals: {
+    lodash: '_'
+  }
 }
