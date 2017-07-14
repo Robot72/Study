@@ -8,6 +8,7 @@
 - Как запутать аналитика. Часть 1. https://habrahabr.ru/post/331882/
 - Блокчейн - https://vc.ru/p/dumbchain
 - Счастливый Криптофермер - https://vc.ru/p/vinogradov-farm
+- 183 questions for startup man - https://vc.ru/p/startup-checklist
 
 ### Сергей Майрин: Зачем маркетологам необходимо разбираться в аналитике больших данных
 1. Татьяна Эшназарова
