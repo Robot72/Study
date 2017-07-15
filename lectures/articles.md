@@ -7,6 +7,9 @@ Cервисы для изучения программирования - https:/
 Проектное ОБУЧЕНИЕ - https://medium.com/krol-institute/проектное-обучение-1daab521b4ff#.5p5ceatqc
 Продуктивность в корпарациях - https://vc.ru/p/productivity-in-corporations
 
+## DevOps
+https://xakep.ru/2017/05/03/top5-devops-utils/
+
 ## Ideis for sites
 Created concurse for my dear users - https://xakep.ru/2017/04/15/wannabe-xakep/
 
@@ -20,6 +23,9 @@ Created concurse for my dear users - https://xakep.ru/2017/04/15/wannabe-xakep/
 //ЮрЛикБез
 https://dev.by/lenta/main/yurlikbez-aytishnika-vybor-dogovornoy-modeli
 https://dev.by/lenta/main/yurlikbez-aytishnika-kakie-dokumenty-oformlyat-pri-nayme-sotrudnikov
+
+//REALTY
+Анализ рынка недвижимости методом случайного леса - https://habrahabr.ru/post/329504/
 
 /* PHP section*/
 https://habrahabr.ru/post/258139/                               - PHP7
@@ -58,3 +64,4 @@ http://all-politologija.ru/knigi/politologiya-uchebnoe-posobie-kruglova/zakonoda
 http://www.hist.bsu.by/images/stories/files/nauka/konf/rol/ageenkova.pdf
 https://habrahabr.ru/post/308526/ //Math
 mathsisfun.com - развлекательная МАТЕМАТИКА!
+Любопытные вещи на AliExpress - https://lifehacker.ru/2017/05/26/aliexpress-79/

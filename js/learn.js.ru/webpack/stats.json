@@ -1,0 +1,171 @@
+{
+  "errors": [],
+  "warnings": [
+    "EnvironmentPlugin - NODE_ENV environment variable is undefined.\n\nYou can pass an object with default values to suppress this warning.\nSee https://webpack.js.org/plugins/environment-plugin for example."
+  ],
+  "hash": "b57bb21e206e6d55dec5",
+  "time": 1885,
+  "publicPath": "",
+  "chunks": [
+    {
+      "id": 0,
+      "rendered": true,
+      "initial": true,
+      "entry": false,
+      "extraAsync": false,
+      "size": 365,
+      "names": [
+        "home"
+      ],
+      "files": [
+        "home.js"
+      ],
+      "hash": "23e1bf45c75c64fab9ef",
+      "parents": [
+        2
+      ],
+      "origins": [
+        {
+          "moduleId": 2,
+          "module": "D:\\Projects\\node_modules\\babel-loader\\lib\\index.js??ref--0-0!D:\\Projects\\Study\\js\\learn.js.ru\\webpack\\frontend\\home.js",
+          "moduleIdentifier": "D:\\Projects\\node_modules\\babel-loader\\lib\\index.js??ref--0-0!D:\\Projects\\Study\\js\\learn.js.ru\\webpack\\frontend\\home.js",
+          "moduleName": "./home.js",
+          "loc": "",
+          "name": "home",
+          "reasons": []
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "rendered": true,
+      "initial": true,
+      "entry": false,
+      "extraAsync": false,
+      "size": 13,
+      "names": [
+        "contact"
+      ],
+      "files": [
+        "contact.js"
+      ],
+      "hash": "098598e46ce388ff1a2e",
+      "parents": [
+        2
+      ],
+      "origins": [
+        {
+          "moduleId": 1,
+          "module": "D:\\Projects\\node_modules\\babel-loader\\lib\\index.js??ref--0-0!D:\\Projects\\Study\\js\\learn.js.ru\\webpack\\frontend\\contact.js",
+          "moduleIdentifier": "D:\\Projects\\node_modules\\babel-loader\\lib\\index.js??ref--0-0!D:\\Projects\\Study\\js\\learn.js.ru\\webpack\\frontend\\contact.js",
+          "moduleName": "./contact.js",
+          "loc": "",
+          "name": "contact",
+          "reasons": []
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "rendered": true,
+      "initial": true,
+      "entry": true,
+      "extraAsync": false,
+      "size": 0,
+      "names": [
+        "common"
+      ],
+      "files": [
+        "common.js"
+      ],
+      "hash": "a2112109210d5036458b",
+      "parents": [],
+      "origins": []
+    }
+  ],
+  "modules": [
+    {
+      "id": 0,
+      "identifier": "D:\\Projects\\node_modules\\babel-loader\\lib\\index.js??ref--0-0!D:\\Projects\\Study\\js\\learn.js.ru\\webpack\\frontend\\welcome.js",
+      "name": "./welcome.js",
+      "index": 1,
+      "index2": 0,
+      "size": 244,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "assets": [],
+      "issuer": "D:\\Projects\\node_modules\\babel-loader\\lib\\index.js??ref--0-0!D:\\Projects\\Study\\js\\learn.js.ru\\webpack\\frontend\\home.js",
+      "issuerId": 2,
+      "issuerName": "./home.js",
+      "profile": {
+        "factory": 26,
+        "building": 78
+      },
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "source": "'use strict';\n\nvar welcomeMessage = function welcomeMessage(message) {\n    console.log('Welcome ' + message);\n\n    if (process.env.NODE_ENV == 'development') {\n        console.log(message);\n    }\n};\n\nvar a = 1;\n\nmodule.exports = welcomeMessage;"
+    },
+    {
+      "id": 1,
+      "identifier": "D:\\Projects\\node_modules\\babel-loader\\lib\\index.js??ref--0-0!D:\\Projects\\Study\\js\\learn.js.ru\\webpack\\frontend\\contact.js",
+      "name": "./contact.js",
+      "index": 2,
+      "index2": 2,
+      "size": 13,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        1
+      ],
+      "assets": [],
+      "issuer": null,
+      "issuerId": null,
+      "issuerName": null,
+      "profile": {
+        "factory": 1293,
+        "building": 433
+      },
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "source": "\"use strict\";"
+    },
+    {
+      "id": 2,
+      "identifier": "D:\\Projects\\node_modules\\babel-loader\\lib\\index.js??ref--0-0!D:\\Projects\\Study\\js\\learn.js.ru\\webpack\\frontend\\home.js",
+      "name": "./home.js",
+      "index": 0,
+      "index2": 1,
+      "size": 121,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "assets": [],
+      "issuer": null,
+      "issuerId": null,
+      "issuerName": null,
+      "profile": {
+        "factory": 60,
+        "building": 1656
+      },
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "source": "'use strict';\n\nvar welcome = require('./welcome');\nvar b = 123;\nvar a = 123;\nwelcome('home');\n\nexports.welcome = welcome;"
+    }
+  ],
+  "filteredModules": 0,
+  "children": []
+}

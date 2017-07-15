@@ -3,12 +3,13 @@ git config --global alias.rh 'reset HEAD'
 git config --global alias.cc 'revert HEAD --no-edit' //Cancel commit
 
 //Just commands:
-git reset --hard [hash]&[tag] // Reset commit 
+git reset --hard [hash]&[tag] // Reset commit
 git commit --amend -m "Text message" //Update last commit
 git mv file_name path_to_move
 git log --max-count=1
 git cat-file -t [hash] //Output info about commit-object
 git cat-file -p [hash] //Output info about commit-object
-git brach [branch_name] //Create branch
+git branch [branch_name] //Create branch
 git checkout [branch_name] //Switch to the branch
 git checkout -b [branch_name] //Create and switch to branch
+git shortlog -s //Count commits by users
