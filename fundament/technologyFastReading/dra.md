@@ -1,6 +1,19 @@
 ## Планируемые статьи:
 - Сбор симантики для контекста - https://vc.ru/p/semantics-context
 
+### How to work networks?
+- https://mkdev.me/posts/kak-rabotayut-seti-chto-takoe-svitch-router-dns-dhcp-nat-vpn-i-eschyo-s-desyatok-neobhodimyh-veschey
+- Network model OSI
+ - physical layer
+ - data link layer
+   - frames, mac address by receiver and by sender. NIC - network interface controller. Switch. VLAN. Bridge. Hub. Router. WAN.
+ - network layer
+   - CIDR. IPv4, IPv6. ARP - address resolution protocol. ARP spoofing. arp -n, ip neigh. DHCP - dynamic Host Configuration Protocol. For work DHCP requires DHCP-server and DHCP-client. "broadcasting". DNS. deg address.com @8.8.8.8. Network Address Translation - NAT. Source NAT - SNAT. Destination NAT - DNAT. VPN
+ - transport layer
+ - session layer
+ - presentation layer
+ - application layer
+
 ### Основы виртуализации и введение в KVM
 - https://mkdev.me/posts/osnovy-virtualizatsii-i-vvedenie-v-kvm
 - VT-x и AMD-V, KVM, VT-x и AMD-V, Xen, host-machine, guest-machine, installed gipervisor, etc
