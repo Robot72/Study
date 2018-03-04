@@ -78,3 +78,27 @@ Am I learning today?
 Are they learning today?
 They are learning today.
 They are not learning today.
+
+You arise
+They arise
+She arises
+He arises
+I arise
+Do I arise
+Does she arise?
+You don't arise.
+She doesn't arise.
+I have arisen.
+She has arisen.
+
+I awake every day at five o'clock.
+She awakes every day at nine o'clock.
+Do you awake early?
+Does she awake early?
+Does he awake lately?
+Do they awake lately?
+
+I beat him.
+You beat him.
+They beat them.
+Do you beat them?
