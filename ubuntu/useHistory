@@ -4,3 +4,5 @@ chmod a=rwx dir               chmod 0777 dir
 chmod a-rwx dir               chmod 0000 dir
 chmod 644                     4 is read, 2 is write, 1 is execute.
 chmod g+r dir                 'g' is group, 'u' is user, 'o' is other.
+
+sudo iwconfig nameWlan0 power off   - switch to power management option to off
