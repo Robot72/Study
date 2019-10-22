@@ -4,3 +4,10 @@
 - Thirst - жажда
 - Can I borrow your car *for a few days*?
 - Are you sure there isn't a solution for the problem?
+- I agreed with him when he said he liked the green one least of all
+- May I bother you for a moment?
+- Everyone was *there except for her*.
+- *How many people have been affected* by the changes?
+- He *has been awarded* a gold medal
+- *I'm not interested,* but thank you for calling(offering).
+- Smoking *causes* lung cancer.
