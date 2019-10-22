@@ -11,3 +11,8 @@
 - He *has been awarded* a gold medal
 - *I'm not interested,* but thank you for calling(offering).
 - Smoking *causes* lung cancer.
+- It was *a tough call* but we had to cancel the show.
+- I made *a tough call*.
+- It was *a tough call*.
+- It's his birthday, so *we're going out to* celebrate.
+- It is not visible for *the naked eyes*.
