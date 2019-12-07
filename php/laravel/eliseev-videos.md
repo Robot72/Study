@@ -3,6 +3,7 @@ https://coursehunters.net/course/master-klass-po-laravel
 
 Lesson 1: 
 - 1:45:00 Overview laravel components
+- 3:00    Less loading IDE
 - 3:35:00 ide-helper install
 - 4:50:00 how to work with larave mix(wrap for WebPack)
 - 5:10:00 
